@@ -113,22 +113,155 @@ body {
   color: #242a45;
   mix-blend-mode: normal;
   opacity: 0.75;
+  margin-bottom: 203px;
 }
 
-.tablet-img{
-    position: relative;
+.tablet-img {
+  position: relative;
 }
 
-.tablet{
-    width: 579px;
-    height: 385px;
-    margin-right: auto;
+.tablet {
+  width: 579px;
+  height: 385px;
+  margin-right: auto;
 }
 
-.Rectangle{
-    position: absolute;
-    left: -10px;
-    top: 50px;
-    left: 150px;
-    z-index: -10;
+.Rectangle {
+  position: absolute;
+  left: -10px;
+  top: 50px;
+  left: 150px;
+  z-index: -10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-features {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #242a45;
+}
+
+.description-of-features {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  max-width: 540px;
+  margin-bottom: 16px;
+  margin-bottom: 72px;
+}
+
+.skills-of-bookmark {
+  border-bottom: 1px solid gray;
+  padding-bottom: 31px;
+  margin-bottom: 72px;
+}
+
+.skills-of-bookmark span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.533333px;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.skills-of-bookmark span:hover {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.533333px;
+  color: red;
+  cursor: pointer;
+  border-bottom: 3px solid red;
+  padding-bottom: 31px;
+}
+
+.bookmarking {
+  margin-right: 90.5px;
+}
+
+.searching {
+  margin-right: 120px;
+}
+
+.board-and-info {
+  display: flex;
+}
+
+.info span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 52px;
+  letter-spacing: -0.1px;
+  color: #242a45;
+  margin-bottom: 16px;
+}
+.info p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #242a45;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  max-width: 445px;
+  margin-bottom: 32px;
+}
+
+.more-info-button button {
+  background: #5267df;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+  border-radius: 5px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+  padding: 10px 24px;
+  border: none;
+}
+
+.board{
+  position: relative;
+  margin-right: 350px;
+}
+
+.boardimg {
+  margin-left: 169px;
+}
+
+.copypng{
+  position: absolute;
+  left: -10px;
+  bottom: -80px;
+  z-index: -10;
 }
