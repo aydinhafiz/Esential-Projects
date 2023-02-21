@@ -163,9 +163,9 @@ button {
   font-size: 18px;
   line-height: 28px;
   text-align: center;
+  opacity: 0.5;
   color: #242a45;
   mix-blend-mode: normal;
-  opacity: 0.5;
   max-width: 540px;
   margin-bottom: 16px;
   margin-bottom: 72px;
@@ -173,11 +173,10 @@ button {
 
 .skills-of-bookmark {
   border-bottom: 1px solid gray;
-  padding-bottom: 31px;
   margin-bottom: 72px;
 }
 
-.skills-of-bookmark span {
+.tab-item {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -187,29 +186,25 @@ button {
   letter-spacing: 0.533333px;
   color: #242a45;
   mix-blend-mode: normal;
-  opacity: 0.75;
-}
-
-.skills-of-bookmark span:hover {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 17px;
-  text-align: center;
-  letter-spacing: 0.533333px;
-  color: red;
+  opacity: 1;
+  display: inline-block;
+  min-width: 243px;
+  min-height: 51px;
   cursor: pointer;
-  border-bottom: 3px solid red;
+}
+
+.tab-item--active {
+  border-bottom: 3px solid #fa5959;
   padding-bottom: 31px;
+  color: #242A45;;
+  opacity: 1;
 }
 
-.bookmarking {
-  margin-right: 90.5px;
-}
-
-.searching {
-  margin-right: 120px;
+.tab-item:hover {
+  color: #fa5959;
+  padding-bottom: 31px;
+  opacity: 1;
+  border-bottom: 3px solid #fa5959;
 }
 
 .board-and-info {
@@ -613,7 +608,7 @@ button {
   z-index: -1;
 }
 
-.logo-and-options{
+.logo-and-options {
   display: flex;
   align-items: center;
 }
@@ -645,10 +640,10 @@ button {
   margin-right: 48px;
 }
 
-.social-media{
+.social-media {
   margin-right: 165px;
 }
 
-.facebook{
+.facebook {
   margin-right: 40px;
 }
