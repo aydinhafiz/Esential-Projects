@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Rubik", sans-serif;
+    background: #ffffff;
+  }
+  
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 108px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .logo img {
+    width: 149px;
+    height: 25px;
+  }
+  
+  .options span {
+    padding-right: 44px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 1.5px;
+    color: #242a45;
+  }
+  
+  .red-button {
+    background: #fa5959;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    padding: 12px 34px;
+    border: none;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .title h2 {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.15px;
+    color: #242a45;
+    margin-bottom: 24px;
+  }
+  
+  .title p {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 32px;
+  }
+  
+  .onChrome {
+    padding: 10px 24px;
+    background: #5267df;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    border: none;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    margin-right: 16px;
+  }
+  
+  .onFirefox {
+    padding: 10px 24px;
+    background: #f7f7f7;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    border: none;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    margin-bottom: 203px;
+  }
+  
+  .tablet-img {
+    position: relative;
+  }
+  
+  .tablet {
+    width: 579px;
+    height: 385px;
+    margin-right: auto;
+  }
+  
+  .Rectangle {
+    position: absolute;
+    left: -10px;
+    top: 50px;
+    left: 150px;
+    z-index: -10;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title-features {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #242a45;
+  }
+  
+  .description-of-features {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    opacity: 0.5;
+    color: #242a45;
+    mix-blend-mode: normal;
+    max-width: 540px;
+    margin-bottom: 16px;
+    margin-bottom: 72px;
+  }
+  
+  .skills-of-bookmark {
+    border-bottom: 1px solid gray;
+    margin-bottom: 72px;
+  }
+  
+  .tab-item {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.533333px;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 1;
+    display: inline-block;
+    min-width: 243px;
+    min-height: 51px;
+    cursor: pointer;
+  }
+  
+  .tab-item--active {
+    border-bottom: 3px solid #fa5959;
+    padding-bottom: 31px;
+    color: #242A45;;
+    opacity: 1;
+  }
+  
+  .tab-item:hover {
+    color: #fa5959;
+    padding-bottom: 31px;
+    opacity: 1;
+    border-bottom: 3px solid #fa5959;
+  }
+  
+  .board-and-info {
+    display: flex;
+    margin-bottom: 238px;
+  }
+  
+  .info span {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    letter-spacing: -0.1px;
+    color: #242a45;
+    margin-bottom: 16px;
+  }
+  .info p {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    max-width: 445px;
+    margin-bottom: 32px;
+  }
+  
+  .more-info-button button {
+    background: #5267df;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    padding: 10px 24px;
+    border: none;
+  }
+  
+  .board {
+    position: relative;
+    margin-right: 350px;
+  }
+  
+  .boardimg {
+    margin-left: 169px;
+  }
+  
+  .copypng {
+    position: absolute;
+    left: -10px;
+    bottom: -80px;
+    z-index: -10;
+  }
+  
+  .header-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title-download {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #242a45;
+    margin-bottom: 16px;
+  }
+  
+  .description-download {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  
+  .browsers-panel {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .browsers-panel span {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #242a45;
+    margin-bottom: 6px;
+  }
+  
+  .browsers-panel p {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 60px;
+  }
+  
+  .browsers-panel button {
+    background: #5267df;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    padding: 10px 34.5px;
+    border: none;
+  }
+  
+  .browser-chrome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    margin-right: 34px;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+    border-radius: 15px;
+    margin-top: 48px;
+  }
+  
+  .browser-firefox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    margin-right: 37px;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+    border-radius: 15px;
+    margin-top: 88px;
+  }
+  
+  .browser-opera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+    border-radius: 15px;
+    margin-top: 128px;
+  }
+  
+  .chrome {
+    width: 102px;
+    height: 100px;
+    margin-top: 49px;
+    margin-bottom: 32px;
+  }
+  
+  .firefox {
+    width: 105px;
+    height: 100px;
+    margin-top: 49px;
+    margin-bottom: 32px;
+  }
+  
+  .opera {
+    width: 96px;
+    height: 100px;
+    margin-top: 49px;
+    margin-bottom: 32px;
+  }
+  
+  .line {
+    margin-bottom: 24px;
+  }
+  
+  .header-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title-frequently {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #242a45;
+    margin-bottom: 16px;
+    margin-top: 149px;
+  }
+  
+  .description-frequently {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 76px;
+  }
+  
+  .some-questions-about-bookmark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .some-questions-about-bookmark img {
+    width: 16px;
+    height: 8px;
+  }
+  
+  .what-is-bookmark {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #242a45;
+    border-top: 1px solid #242a45;
+    margin-bottom: 13px;
+    padding-top: 13px;
+    width: 540px;
+  }
+  
+  .how-can-I-request-a-new-browser {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #242a45;
+    border-top: 1px solid #242a45;
+    margin-bottom: 13px;
+    padding-top: 13px;
+    width: 540px;
+  }
+  
+  .is-there-a-mobile-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #242a45;
+    border-top: 1px solid #242a45;
+    margin-bottom: 13px;
+    padding-top: 13px;
+    width: 540px;
+  }
+  
+  .What-about-other-Chromium-browsers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #242a45;
+    border-top: 1px solid #242a45;
+    border-bottom: 1px solid #242a45;
+    width: 540px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  
+  .more-info-button button {
+    margin-top: 78px;
+    padding: 10px 24px;
+    background: #5267df;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    margin-bottom: 150px;
+  }
+  
+  .outro {
+    background: #5267df;
+    width: auto;
+    height: 360px;
+  }
+  
+  .some-informations {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .already-joined p {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #ffffff;
+    margin-top: 58px;
+    margin-bottom: 24px;
+  }
+  
+  .already-joined span {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    color: #ffffff;
+  }
+  
+  .contact-infos {
+    margin-top: 36px;
+  }
+  
+  .contact-infos input {
+    background: #ffffff;
+    border-radius: 5px;
+    border: none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 113px;
+  }
+  
+  .contact-infos button {
+    background: #fa5959;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    margin-left: 16px;
+  }
+  
+  .the-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    height: 88px;
+    background: #242a45;
+    z-index: -1;
+  }
+  
+  .logo-and-options {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-and-options img {
+    margin-left: 165px;
+    margin-top: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .logo-and-options span {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .features {
+    margin-left: 65px;
+    margin-right: 44px;
+  }
+  
+  .pricing {
+    margin-right: 48px;
+  }
+  
+  .social-media {
+    margin-right: 165px;
+  }
+  
+  .facebook {
+    margin-right: 40px;
+  }
+  
