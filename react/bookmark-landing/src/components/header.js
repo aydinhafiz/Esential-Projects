@@ -1,8 +1,9 @@
+import logo from "../images-react/logo-bookmark.svg"
 function Header() {
   return (
     <div class="header">
       <div class="logo">
-        <img src="./images/logo-bookmark.svg" alt="" />
+        <img src={logo} alt="" />
       </div>
       <div class="options">
         <span>FEATURES</span>

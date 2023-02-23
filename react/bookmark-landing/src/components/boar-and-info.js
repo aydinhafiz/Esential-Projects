@@ -1,11 +1,11 @@
-// import features1 from "/react/bookmark-landing/src/images-react/illustration-features-tab-1.svg"
-// import copypng from "/react/bookmark-landing/src/images-react/rectanglecopy.png"
+import features1 from "../images-react/illustration-features-tab-1.svg"
+import copypng from "../images-react/rectanglecopy.png"
 function BoardAndInfo() {
   return (
     <div className="board-and-info">
       <div className="board">
-        <img className="boarding" src="" alt="" />
-        <img className="copypng" src="" alt="" />
+        <img className="boarding" src={features1} alt="" />
+        <img className="copypng" src={copypng} alt="" />
       </div>
       <div className="info">
         <span>Bookmark in one click</span>

@@ -1,3 +1,5 @@
+import hero from "../images-react/illustration-hero.svg"
+import rectangle from "../images-react/Rectangle.png"
 function Content() {
   return (
     <div class="content">
@@ -16,8 +18,8 @@ function Content() {
         </div>
       </div>
       <div class="tablet-img">
-        <img class="tablet" src="./images/illustration-hero.svg" alt="" />
-        <img class="Rectangle" src="./images/Rectangle.png" alt="" />
+        <img class="tablet" src={hero} alt="" />
+        <img class="Rectangle" src={rectangle} alt="" />
       </div>
     </div>
   );
