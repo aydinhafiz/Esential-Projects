@@ -1,34 +1,30 @@
 import React from "react";
-import "../App.css";
-// import Job from "./job";
-import jobData from "./data";
 import Job from "./job";
-
+import data from "../data";
 function Jobs() {
   return (
     <div className="jobs">
-      {jobData.map(function (jobrequest) {
+      {data.map(function (request) {
         const {
           id,
           company,
           logo,
-          description,
           position,
           postedAt,
           contract,
           location,
-        } = jobrequest;
+          description,
+        } = request;
         return (
           <Job
-            key={id}
             id={id}
+            company={company}
             logo={logo}
             position={position}
             postedAt={postedAt}
-            company={company}
-            description={description}
             contract={contract}
             location={location}
+            description={description}
           />
         );
       })}

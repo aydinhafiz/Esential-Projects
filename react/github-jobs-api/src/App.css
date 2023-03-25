@@ -4,12 +4,23 @@
   box-sizing: border-box;
 }
 
-.job {
-  padding: 49px 32px 32px 32px;
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  background: #f4f6f8;
+}
+
+.jobs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 144px;
+
   background: #ffffff;
   border-radius: 6px;
-  width: 350px;
-  margin-bottom: 65px;
+  padding: 49px 32px 32px 32px;
+  margin-right: 30px;
+  margin-bottom: 40px;
 }
 
 .job-time {
@@ -31,6 +42,16 @@
   line-height: 25px;
   color: #19202d;
   margin-bottom: 12px;
+}
+
+.job h2:hover {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+
+  color: #6e8098;
 }
 
 .job h3 {

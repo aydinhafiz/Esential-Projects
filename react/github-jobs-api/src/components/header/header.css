@@ -1,0 +1,21 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    min-width: 1110px;
+  }
+  
+  .darkmode{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .turn-on-or-light {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 5px 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
