@@ -28,6 +28,14 @@ body {
   height: 302px;
   width: 302px;
   margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.card__image:hover {
+  background: #00fff8;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border-radius: 8px;
 }
 
 .card__image {
@@ -42,6 +50,11 @@ body {
   line-height: 28px;
   color: #ffffff;
   margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.card__title:hover {
+  color: #00fff8;
 }
 
 .card__paragraph {
@@ -101,7 +114,6 @@ body {
   width: 33px;
   height: 33px;
   margin-right: 16px;
-  
 }
 
 .user-info__photo {
@@ -127,4 +139,9 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.user-info__name:hover {
+  color: #00fff8;
 }

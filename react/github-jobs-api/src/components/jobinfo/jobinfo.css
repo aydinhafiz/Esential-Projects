@@ -1,55 +1,41 @@
 .mycontent {
   margin: 50px auto;
   max-width: 1110px;
-  background: #ffffff;
 }
 
 .header-info {
   display: flex;
   justify-content: space-between;
-  background: #f4f6f8;
+  background: #ffffff;
   border-radius: 6px;
+  height: 140px;
 }
 
-.logoimg {
-  /* width: 140px;
-    height: 140px; */
+.company-info {
+  display: flex;
 }
+
+
 
 .company-name {
-  font-family: "Kumbh Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: #19202d;
+
 }
 
 .company-tag {
-  font-family: "Kumbh Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #6e8098;
+
 }
 
-.company-site-button {
-    padding: 16px 20px 12px 20px;
+.header-button button {
+
+}
+
+.header-button button:hover {
+  opacity: 0.35;
   background: #5964e0;
   mix-blend-mode: normal;
-  opacity: 0.1;
-  border-radius: 5px;
-  border: none;
+  border-radius: 5px; 
 }
 
-.company-site-button button {
-  font-family: "Kumbh Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #5964e0;
-  border: none;
-}
+/* .header-left-info{
+  display: flex;
+} */

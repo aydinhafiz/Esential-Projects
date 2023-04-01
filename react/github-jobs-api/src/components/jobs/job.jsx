@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { SJob, SJobTime } from "./job.styles";
+
 function Job(props) {
   const {
     id,
@@ -12,20 +14,20 @@ function Job(props) {
     description,
   } = props;
   return (
-    <div class="job">
-      <div class="job-time">
-        <div class="img">
+    <SJob>
+      <SJobTime>
+        <div className="img">
           <img src="./assets/logos/scoot.svg" alt="" />
         </div>
         <span>{postedAt}</span>
         <span>{contract}</span>
-      </div>
+      </SJobTime>
       <Link to="job-info">
         <h2>{position}</h2>
       </Link>
       <h3>{company}</h3>
       <h4>{location}</h4>
-    </div>
+    </SJob>
   );
 }
 
