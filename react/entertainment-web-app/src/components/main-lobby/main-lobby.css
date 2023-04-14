@@ -4,26 +4,16 @@
   margin-bottom: 32px;
 }
 
-.trending-movies {
-  position: absolute;
-  top: 200px;
-  right: 320px;
-}
+
+
+
+
+
 
 .trend-movie {
   border-radius: 8px;
 }
 
-.category-trending {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 32px;
-  line-height: 40px;
-  letter-spacing: -0.5px;
-
-  color: #ffffff;
-}
 
 .play-description {
   font-family: "Outfit";
