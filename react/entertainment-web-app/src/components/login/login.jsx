@@ -1,10 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { Scontainer } from "./login.styles";
+
+
 
 function Login() {
   return (
-    <div className="container">
+    <Scontainer>
       <div className="content">
         <h2 className="login">Login</h2>
         <div className="login-process">
@@ -18,7 +21,7 @@ function Login() {
           </div>
 
           <div className="login-button">
-            <Link to="/home">
+            <Link to="/main-js">
               <button className="button-for-login">
                 {" "}
                 Login to your account
@@ -30,7 +33,7 @@ function Login() {
           </p>
         </div>
       </div>
-    </div>
+    </Scontainer>
   );
 }
 export default Login;

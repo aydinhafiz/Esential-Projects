@@ -1,0 +1,166 @@
+.profile-circle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.trending-movies {
+  position: absolute;
+  top: 200px;
+  right: 320px;
+}
+
+.trend-movie {
+  border-radius: 8px;
+}
+
+.category-trending {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+
+  color: #ffffff;
+}
+
+.play-description {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #ffffff;
+  margin-right: 24px;
+}
+
+.start-img {
+  width: 30px;
+  height: 30px;
+
+  margin-left: 9px;
+}
+
+.trend-movie {
+  position: relative;
+  cursor: pointer;
+}
+
+.play-button-hover {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  top: 100px;
+  right: 180px;
+
+  background: rgba(255, 255, 255, 0.25);
+  mix-blend-mode: normal;
+  border-radius: 28.5px;
+  width: 117px;
+  height: 48px;
+}
+
+.movie-title-img:hover {
+  background: black;
+  border-radius: 8px;
+}
+
+.movie-title-img {
+  position: relative;
+}
+
+/* 
+.trend-movie::before{
+  content: "";
+  background: url(./images/icon-view.svg);
+  width: 50px;
+  height: 40px;
+} */
+
+.movie-or-serie-info {
+  display: flex;
+  align-items: center;
+  position: absolute;
+
+  top: 155px;
+  left: 20px;
+}
+
+.movie-or-serie-title {
+  position: absolute;
+  top: 180px;
+  left: 20px;
+}
+
+.circle {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border: 50%;
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+}
+
+.time-year {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-right: 8px;
+}
+
+.movie-or-serie-filter-span {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-right: 9px;
+  padding-left: 6px;
+}
+
+.movie-img {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+}
+
+.pg {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.75;
+  margin-left: 11px;
+}
+
+.title-serie-movie {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #ffffff;
+}
