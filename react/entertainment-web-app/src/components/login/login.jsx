@@ -21,7 +21,7 @@ function Login() {
           </div>
 
           <div className="login-button">
-            <Link to="/main-js">
+            <Link to="/">
               <button className="button-for-login">
                 {" "}
                 Login to your account
