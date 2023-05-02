@@ -9,15 +9,22 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 10px;
+  background: #373f68;
 }
 
 .logo-image {
   margin-left: 8px;
+  background: #373f68;
 }
 
 .logo {
   width: 150px;
   height: 30px;
+  background: #373f68;
+}
+
+.info-items {
+  background: #373f68;
 }
 
 .info-item {
@@ -63,8 +70,4 @@
 
 .info-item:last-child:hover {
   background: #e84d70;
-}
-
-@media screen {
-  
 }

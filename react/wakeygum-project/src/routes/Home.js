@@ -1,5 +1,6 @@
 import "../App.css";
 import HeaderHome from "../components/header-home/header.home";
+import ContentHome from "../components/home-content/content-home";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
         <HeaderHome />
       </div>
       <div className="content-container">
-      
+        <ContentHome />
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 import "./main-lobby.css";
 import magnifyingImg from "../../assets/magnifying.png";
@@ -12,7 +11,6 @@ import profileImg from "../../assets/profile-img.png";
 
 import TrendingMovies from "../trending-movies/trending-movies";
 import { SContainer } from "./main-lobby.styles";
-
 
 function Home() {
   return (
@@ -39,7 +37,6 @@ function Home() {
         </div>
       </div>
       <TrendingMovies />
-      
     </SContainer>
   );
 }
