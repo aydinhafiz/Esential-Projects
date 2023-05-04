@@ -1,5 +1,6 @@
 import React from "react";
 import { SSignUpHeader } from "./sign-up.styles";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
@@ -25,7 +26,11 @@ function SignUp() {
         </div>
         <button className="login-your-account">Create an account</button>
         <h3 className="dont-have-account">
-          Already have an account? <span className="login">Login</span>
+          Already have an account?{" "}
+          <Link to={"/login"}>
+            {" "}
+            <span className="login">Login</span>
+          </Link>
         </h3>
       </div>
     </SSignUpHeader>
