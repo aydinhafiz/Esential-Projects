@@ -1,83 +1,109 @@
-import React from "react";
 import styled from "styled-components";
 
-export const Scontainer = styled.div`
+export const SSignUpHeader = styled.div`
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 187px auto;
+  margin-top: 187px;
 
-  .content {
-    padding: 32px 32px;
-    max-width: 400px;
+  .signup-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 32px;
     background: #161d2f;
     border-radius: 20px;
-    margin-left: 850px;
+    max-width: 400px;
   }
 
-  .login {
+  .title-signup {
+    margin-right: 292px;
+    margin-bottom: 40px;
+    margin-left: 32px;
+
     font-family: "Outfit";
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 40px;
     letter-spacing: -0.5px;
+
     color: #ffffff;
-    margin-bottom: 40px;
   }
 
-  .login-informations {
-    margin-bottom: 40px;
-  }
-
-  .email {
+  .signup-email {
     font-family: "Outfit";
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 19px;
 
+    padding: 0px 227px 18px 16px;
+    max-width: 336px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #5a698f;
+    padding-bottom: 17px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
     margin-bottom: 24px;
-    padding-bottom: 17px;
-    padding-left: 16px;
-    background-color: #161d2f;
-    border: none;
-    border-bottom: 1px solid #5a698f;
-    width: 336px;
   }
 
-  .password {
+  .signup-password {
     font-family: "Outfit";
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 19px;
 
-    padding-bottom: 17px;
-    padding-left: 16px;
-    background-color: #161d2f;
+    padding: 0px 227px 18px 16px;
+    max-width: 336px;
     border: none;
+    background: none;
     border-bottom: 1px solid #5a698f;
-    width: 336px;
+    padding-bottom: 17px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 24px;
   }
 
-  .button-for-login {
+  .repeat-password {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 19px;
+
+    padding: 0px 227px 18px 16px;
+    max-width: 336px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #5a698f;
+    padding-bottom: 17px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+
+  .login-your-account {
     font-family: "Outfit";
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 19px;
     text-align: center;
-    color: #ffffff;
 
-    border: none;
-    padding: 14px 95.5px 15px 96.5px;
     background: #fc4747;
+    border: none;
     border-radius: 6px;
-    cursor: pointer;
+    color: #ffffff;
+    padding: 14px 96.5px 15px 96.5px;
+    margin-top: 40px;
     margin-bottom: 24px;
   }
 
-  .button-for-login:hover {
+  .login-your-account:hover {
     font-family: "Outfit";
     font-style: normal;
     font-weight: 300;
@@ -96,18 +122,19 @@ export const Scontainer = styled.div`
     font-weight: 300;
     font-size: 15px;
     line-height: 19px;
-    color: #ffffff;
 
-    display: flex;
+    color: #ffffff;
   }
 
-  .sign-up {
+  .login {
     font-family: "Outfit";
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
     line-height: 19px;
-    color: #fc4747;
+
     padding-left: 9px;
+    color: #fc4747;
+    cursor: pointer;
   }
 `;
