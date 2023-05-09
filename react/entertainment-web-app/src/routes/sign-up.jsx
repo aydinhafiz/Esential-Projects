@@ -1,5 +1,5 @@
 import React from "react";
-import { SSignUpHeader } from "./sign-up.styles";
+import { SSignUpHeader } from "../components/sign-up/sign-up.styles";
 import { Link } from "react-router-dom";
 
 function SignUp() {
@@ -20,8 +20,8 @@ function SignUp() {
           />
           <input
             className="repeat-password"
-            type="Repeat password"
-            placeholder="Password"
+            type="password"
+            placeholder="Repeat password"
           />
         </div>
         <button className="login-your-account">Create an account</button>

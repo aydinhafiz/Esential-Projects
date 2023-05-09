@@ -19,9 +19,9 @@ export const SSignUpHeader = styled.div`
   }
 
   .title-signup {
-    margin-right: 292px;
+    margin-right: 130px;
     margin-bottom: 40px;
-    margin-left: 32px;
+    width: 200px;
 
     font-family: "Outfit";
     font-style: normal;
@@ -49,6 +49,7 @@ export const SSignUpHeader = styled.div`
     mix-blend-mode: normal;
     opacity: 0.5;
     margin-bottom: 24px;
+    color: #ffffff;
   }
 
   .signup-password {
@@ -67,6 +68,7 @@ export const SSignUpHeader = styled.div`
     mix-blend-mode: normal;
     opacity: 0.5;
     margin-bottom: 24px;
+    color: #ffffff;
   }
 
   .repeat-password {
@@ -84,6 +86,7 @@ export const SSignUpHeader = styled.div`
     padding-bottom: 17px;
     mix-blend-mode: normal;
     opacity: 0.5;
+    color: #ffffff;
   }
 
   .login-your-account {
@@ -127,6 +130,8 @@ export const SSignUpHeader = styled.div`
   }
 
   .login {
+    text-decoration: none;
+
     font-family: "Outfit";
     font-style: normal;
     font-weight: 300;

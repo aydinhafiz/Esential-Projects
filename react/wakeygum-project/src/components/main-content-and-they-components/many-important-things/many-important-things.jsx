@@ -1,37 +1,37 @@
 import React from "react";
-import blitz from "../../../assets/blitz.png";
 import { SManyImportantThings } from "./many-important-things.styles";
-const dataImportantThings = [
-  {
-    img: "",
-    importantDescription: "Snappy Process",
-    importantparagraph: "Snappy Process",
-  },
-  {
-    img: "",
-    importantDescription: "Snappy Process",
-    importantparagraph: "Snappy Process",
-  },
-  {
-    img: "",
-    importantDescription: "Snappy Process",
-    importantparagraph: "Snappy Process",
-  },
-];
-
+import ImportantThing from "../../important-thing/important-thing.jsx";
+import blitz from "../../../assets/blitz.png";
 function ManyImportantThings() {
+  const dataImportantThings = [
+    {
+      img: { blitz },
+      importantDescription: "Snappy Process",
+      importantparagraph: "Snappy Process",
+    },
+    {
+      img: "../../../assets/blitz.png",
+      importantDescription: "Snappy Proces",
+      importantparagraph: "Snappy Process",
+    },
+    {
+      img: "../../../assets/blitz.png",
+      importantDescription: "Snappy Proce",
+      importantparagraph: "Snappy Process",
+    },
+  ];
   return (
     <SManyImportantThings>
-      <div className="important-things">
-        <div className="important-img-bar">
-          <img className="important-img" src={blitz} alt="" />
-        </div>
-        <span className="important-description">Snappy Process</span>
-        <p className="important-paragraph">
-          Our application process can be completed in minutes, not hours. Don’t
-          get stuck filling in tedious forms.
-        </p>
-      </div>
+      {dataImportantThings.map(function (data) {
+        return (
+          <ImportantThing
+            key={data.importantDescription}
+            description={data.importantDescription}
+            paragraph={data.importantparagraph}
+            productImage={data.img}
+          />
+        );
+      })}
     </SManyImportantThings>
   );
 }

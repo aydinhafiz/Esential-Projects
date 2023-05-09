@@ -1,8 +1,8 @@
 import React from "react";
-import { SLoginHeader } from "./login-page.stlyes";
+import { SLoginHeader } from "../components/login-page/login-page.stlyes";
 import { Link } from "react-router-dom";
 
-function LoginPage() {
+function Login() {
   return (
     <SLoginHeader>
       <div className="login-page">
@@ -22,7 +22,7 @@ function LoginPage() {
         <button className="login-your-account">Login to your account</button>
         <h3 className="dont-have-account">
           Don’t have an account?{" "}
-          <Link to={"SignUp"}>
+          <Link to={"/signup"}>
             <span className="sign-up">Sign Up</span>
           </Link>
         </h3>
@@ -30,4 +30,4 @@ function LoginPage() {
     </SLoginHeader>
   );
 }
-export default LoginPage;
+export default Login;

@@ -9,18 +9,3 @@ body {
   background: #ffffff;
 }
 
-.section-end {
-  display: flex;
-  justify-content: space-between;
-  background-color: #fafafa;
-  flex: 1;
-  height: 100px;
-}
-
-.logo-side {
-  margin-top: 20px;
-}
-
-.social-media {
-  margin-top: 20px;
-}

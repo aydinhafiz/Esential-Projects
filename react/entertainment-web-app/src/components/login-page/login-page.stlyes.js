@@ -49,6 +49,7 @@ export const SLoginHeader = styled.div`
     mix-blend-mode: normal;
     opacity: 0.5;
     margin-bottom: 24px;
+    color: #ffffff;
   }
 
   .login-password {
@@ -66,6 +67,7 @@ export const SLoginHeader = styled.div`
     padding-bottom: 17px;
     mix-blend-mode: normal;
     opacity: 0.5;
+    color: #ffffff;
   }
 
   .login-your-account {
@@ -118,5 +120,6 @@ export const SLoginHeader = styled.div`
     padding-left: 9px;
     color: #fc4747;
     cursor: pointer;
+    text-decoration: none;
   }
 `;
