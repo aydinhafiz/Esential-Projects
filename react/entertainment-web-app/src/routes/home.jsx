@@ -1,6 +1,6 @@
 import "../App.css";
 
-import searchImg from "../assets/icon-search.svg";
+import HomeHeader from "../components/home-header/home-header";
 import SideBar from "../components/home-sidebar/home-sidebar";
 
 function Home() {
@@ -8,13 +8,10 @@ function Home() {
     <div className="home-container">
       <div className="home-content">
         <SideBar />
-        <div className="home-header">
-          <img src={searchImg} alt="" className="magnify" />
-          <input
-            type="text"
-            placeholder="Search for movies or TV series"
-            className="search-for-movies"
-          />
+        <HomeHeader />
+        <div className="trending-movies">
+          <h2 className="trending-title">Trending</h2>
+          <div className="trending-movie"></div>
         </div>
       </div>
     </div>
