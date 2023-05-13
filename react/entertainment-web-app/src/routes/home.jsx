@@ -9,10 +9,7 @@ function Home() {
       <div className="home-content">
         <SideBar />
         <HomeHeader />
-        <div className="trending-movies">
-          <h2 className="trending-title">Trending</h2>
-          <div className="trending-movie"></div>
-        </div>
+
       </div>
     </div>
   );

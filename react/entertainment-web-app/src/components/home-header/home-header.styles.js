@@ -4,7 +4,7 @@ export const SHomeHeader = styled.div`
   margin-top: 64px;
   margin-left: 36px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: start;
 
   .magnify {
@@ -26,4 +26,9 @@ export const SHomeHeader = styled.div`
     padding-left: 24px;
     width: 350px;
   }
+  .header {
+    margin-bottom: 34px;
+  }
+
+
 `;
