@@ -12,6 +12,7 @@ export const SSideBar = styled.div`
     margin-top: 35.41px;
     margin-bottom: 75px;
     margin-left: 31.86px;
+    margin-right: 32.14px;
   }
 
   .categories {

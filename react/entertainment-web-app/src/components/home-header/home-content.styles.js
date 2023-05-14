@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SHomeHeader = styled.div`
+export const SHomeContent = styled.div`
   margin-top: 64px;
   margin-left: 36px;
   display: flex;
@@ -29,6 +29,4 @@ export const SHomeHeader = styled.div`
   .header {
     margin-bottom: 34px;
   }
-
-
 `;

@@ -1,15 +1,14 @@
 import React from "react";
 
-import { SHomeHeader } from "./home-header.styles";
+import { SHomeContent } from "./home-content.styles";
 
 import searchImg from "../../assets/icon-search.svg";
 
-
 import MovieBoxes from "../movies/movie-boxes";
 
-function HomeHeader() {
+function HomeContent() {
   return (
-    <SHomeHeader>
+    <SHomeContent>
       <div className="header">
         <img src={searchImg} alt="" className="magnify" />
         <input
@@ -20,7 +19,7 @@ function HomeHeader() {
       </div>
 
       <MovieBoxes />
-    </SHomeHeader>
+    </SHomeContent>
   );
 }
-export default HomeHeader;
+export default HomeContent;

@@ -1,11 +1,15 @@
 .trending-movies {
   display: flex;
-  width: 1240px;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
 .trending-movie {
-  width: 100%;
+  width: 280px;
+  position: relative;
+}
+.trending-movie img {
+  max-width: 100%;
 }
 
 .movie-description {
@@ -54,4 +58,21 @@
   line-height: 30px;
 
   color: #ffffff;
+}
+
+.favourite-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #10141e;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+
+  position: absolute;
+  top: 15px;
+  right: 10px;
 }

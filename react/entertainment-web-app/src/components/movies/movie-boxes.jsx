@@ -5,7 +5,6 @@ import MovieBox from "./movie-box";
 function MovieBoxes() {
   return (
     <div className="trending-movies">
-
       {moviesData.map(function (movie) {
         return (
           <MovieBox
@@ -14,6 +13,7 @@ function MovieBoxes() {
             year={movie.year}
             category={movie.category}
             rating={movie.rating}
+            thumbnail={movie.thumbnail.regular.small}
             isBookmarked={movie.isBookmarked}
             isTrending={movie.isTrending}
           />
