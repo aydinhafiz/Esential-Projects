@@ -1,38 +1,225 @@
-.App {
-  text-align: center;
+/* ////////////CONTAİNER////////////////////////////////////////////////////// */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #f7f8fd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
+
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1;
+}
+
+/* ////////////HEADER////////////////////////////////////////////////////// */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 94px;
+  padding: 14px 16px 14px 24px;
+  background: #373f68;
+  border-radius: 10px;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+}
+
+.header-suggestions {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+
+  color: #ffffff;
+  margin-left: 16px;
+  margin-right: 38px;
+}
+
+.sorted-by {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #f2f4fe;
+  cursor: pointer;
+}
+
+.sorted-by:hover {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #f2f4fe;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.most-upvotes {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+
+  color: #f2f4fe;
+}
+
+.add-feedback-button {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+
+  border: none;
+  cursor: pointer;
+  padding: 12.5px 25px 11.5px 24px;
+  color: #f2f4fe;
+  background: #ad1fea;
+  border-radius: 10px;
+}
+
+.add-feedback-button:hover {
+  background: #c75af6;
+  border-radius: 10px;
+}
+/* ////////////FEEDBACK////////////////////////////////////////////////////// */
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #ffffff;
+  margin-top: 52px;
+  border-radius: 10px;
+  padding: 28px 32px;
+}
+
+.left-on-feedbacks {
+  display: flex;
+  align-items: center;
+}
+
+.likes-bar {
+  display: flex;
+  align-items: center;
   flex-direction: column;
+  justify-content: center;
+
+  padding: 14px 9px 8px 9px;
+  margin-right: 40px;
+  background: #f2f4fe;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.likes-bar:hover {
+  background: #cfd7ff;
+  border-radius: 10px;
+}
+
+.how-many-likes {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19px;
+
+  margin-top: 8px;
+  text-align: center;
+  letter-spacing: -0.180556px;
+
+  color: #3a4374;
+}
+
+.feedback-title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+
+  color: #3a4374;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.feedback-title:hover {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+
+  color: #4661e6;
+}
+
+.feedback-description {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+
+  color: #647196;
+  margin-bottom: 12px;
+}
+
+.feedback-category {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+
+  background: #f2f4ff;
+  border-radius: 10px;
+  border: none;
+  color: #4661e6;
+  padding: 5px 16px 6px 16px;
+}
+
+.right-on-feedbacks {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 32px;
 }
 
-.App-link {
-  color: #61dafb;
+.how-many-comments {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: -0.222222px;
+  color: #3a4374;
+  margin-left: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right-on-feedbacks img,
+.right-on-feedbacks span {
+  display: inline-block;
+  vertical-align: middle;
 }
+/* ////////////SİDE-BAR////////////////////////////////////////////////////// */
