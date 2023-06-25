@@ -18,6 +18,7 @@ body {
 
 .content {
   flex: 1;
+  margin-left: 30px;
 }
 
 /* ////////////HEADER////////////////////////////////////////////////////// */
@@ -223,3 +224,107 @@ body {
   vertical-align: middle;
 }
 /* ////////////SİDE-BAR////////////////////////////////////////////////////// */
+
+.sidebar {
+  margin-top: 94px;
+}
+
+.feedback-board {
+  padding-top: 62px;
+  padding-right: 78px;
+  padding-bottom: 24px;
+  padding-left: 24px;
+  margin-bottom: 24px;
+
+  border-radius: 10px;
+  background: radial-gradient(
+    166.82% 166.82% at 103.9% -10.39%,
+    #e84d70 0%,
+    #a337f6 53.09%,
+    #28a7ed 100%
+  );
+}
+
+.mentor-title {
+  color: #fff;
+  font-size: 20px;
+  font-family: Jost;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
+
+.mentor-board {
+  color: #fff;
+  font-size: 15px;
+  font-family: Jost;
+  font-weight: 500;
+}
+
+.category-board {
+  border-radius: 10px;
+  background: #fff;
+  padding: 24px 50px 24px 24px;
+  margin-bottom: 24px;
+}
+
+.category {
+  margin-bottom: 14px;
+}
+
+.all-ui-ux-categories {
+  color: #4661e6;
+  font-size: 13px;
+  font-family: Jost;
+  font-weight: 600;
+
+  border: none;
+  border-radius: 10px;
+  background: #f2f4ff;
+  padding: 5px 16px 6px 16px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.roadmap {
+  border-radius: 10px;
+  background: #fff;
+
+  padding: 19px 24px 40px 24px;
+}
+
+.roadmap-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.roadmap-title {
+  color: #3a4374;
+  font-size: 18px;
+  font-family: Jost;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+}
+
+.view-button {
+  color: #4661e6;
+  font-size: 13px;
+  font-family: Jost;
+  font-weight: 600;
+  text-decoration-line: underline;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.planned {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle-color {
+  border-radius: 8px;
+  background: #f49f85;
+  border: 50%;
+}
