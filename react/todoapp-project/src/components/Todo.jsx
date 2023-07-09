@@ -19,9 +19,9 @@ function Todo(props) {
           {description}
         </h1>
         <button
-          onClick={() => {
-            onDeleteTodo(index);
-          }}
+          // onClick={() => {
+          //   onDeleteTodo(props.index);
+          // }}
           className="text-lg bg-gray-400 p-2 text-white"
         >
           Delete

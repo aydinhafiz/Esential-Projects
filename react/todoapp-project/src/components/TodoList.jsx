@@ -28,11 +28,11 @@ function TodoList() {
     setTodos(newTodos);
   };
 
-  function deleteTodo(index) {
-    const newTodos = [...todos];
-    newTodos.splice(index, 1);
-    setTodos(newTodos);
-  }
+  // function deleteTodo(index) {
+  //   const newTodos = [...todos];
+  //   newTodos.splice(index, 1);
+  //   setTodos(newTodos);
+  // }
 
   useEffect(
     function () {
@@ -55,7 +55,7 @@ function TodoList() {
             description={todos.description}
             done={todos.dones}
             key={i}
-            onDeleteTodo={deleteTodo}
+            // onDeleteTodo={deleteTodo}
           />
         );
       })}
