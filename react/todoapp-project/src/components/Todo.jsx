@@ -1,5 +1,5 @@
-function Todo(props) {
-  const { description, done, onChangeTodo, index, onDeleteTodo } = props;
+const Todo = (props) => {
+  const { description, done, index, onChangeTodo, onDeleteTodo } = props;
 
   return (
     <>
@@ -7,7 +7,7 @@ function Todo(props) {
         className={
           done
             ? "flex justify-between p-2 items-center bg-green-600 text-white"
-            : "flex justify-between p-2 items-center bg-red-500  text-white"
+            : "flex justify-between p-2 items-center bg-red-500 text-white"
         }
       >
         <h1
@@ -19,16 +19,16 @@ function Todo(props) {
           {description}
         </h1>
         <button
-          // onClick={() => {
-          //   onDeleteTodo(props.index);
-          // }}
-          className="text-lg bg-gray-400 p-2 text-white"
+          onClick={() => {
+            onDeleteTodo(index);
+          }}
+          className="text-lg bg-gray-400 p-2 cursor-pointer text-white"
         >
           Delete
         </button>
       </div>
     </>
   );
-}
+};
 
 export default Todo;
