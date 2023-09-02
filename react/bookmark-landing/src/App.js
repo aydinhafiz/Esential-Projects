@@ -19,6 +19,8 @@ function App() {
           <div className="title-download">
             <span>Download the extension</span>
           </div>
+
+          
           <div className="description-download">
             <p>
               We’ve got more browsers in the pipeline. Please do let us know if
