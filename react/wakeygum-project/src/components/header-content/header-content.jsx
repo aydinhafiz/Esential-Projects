@@ -5,6 +5,7 @@ function HeaderContent() {
   return (
     <SContentMain>
       <div className="description-side">
+        
         <h2 className="title-humanizing">Humanizing your insurance.</h2>
         <p className="description-humanizing">
           Get your life insurance coverage easier and faster. We blend our
