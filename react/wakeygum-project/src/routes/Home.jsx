@@ -20,7 +20,8 @@ function Home() {
       <SocialMediaInfo />
     </div>
 
-    
+
+
   );
 }
 export default Home;
