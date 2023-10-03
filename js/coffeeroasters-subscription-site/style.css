@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    background: #FEFCF7;
+}
+
+.container {
+    margin-top: 44px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.logo-header {
+    margin-left: 80px;
+}
+
+.option-elements-header {
+    margin-right: 80px;
+}
+
+.elements-header:nth-child(2) {
+    margin: 0px 33px;
+}
+
+.elements-header {
+    border: none;
+    background: none;
+    color: #83888F;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.elements-header:hover {
+    color: #333D4B;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+}
+
+.create-plan-info {
+    margin-left: 86px;
+    margin-top: 180px;
+}
+
+.create-plan-description {
+    margin: 0px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+.create-plan-title {
+    color: #FEFCF7;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 72px;
+
+    margin-bottom: 32px;
+    max-width: 493px;
+}
+
+.create-plan-paragraph {
+    color: rgb(254, 252, 247, 0.8);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+    margin-bottom: 73px;
+    max-width: 445px;
+}
+
+.create-plan-button {
+    color: #FEFCF7;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+
+    border-radius: 6px;
+    background: #0E8784;
+    padding: 15px 31px;
+    border: none;
+    cursor: pointer;
+}
+
+.create-plan-button:hover {
+    border-radius: 6px;
+    background: #66D2CF;
+}
+
+.create-plan-description {
+    background-image: url('./starter-code/assets/home/desktop/image-hero-coffeepress.jpg');
+    background-size: cover;
+    /* Resmi div'e sığdır */
+    background-repeat: no-repeat;
+    /* Tekrar etmeyi engelle */
+    background-position: center;
+    /* Resmi ortala */
+    /* Diğer stillendirmeler... */
+    width: 1720px;
+    height: 800px;
+    border-radius: 10px;
+}

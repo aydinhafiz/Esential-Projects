@@ -11,17 +11,12 @@ import SocialMediaInfo from "../components/social-media-info/social-media-info.j
 ////////////////////////////////////////////////////////////
 function Home() {
   return (
-
-  
     <div className="home-container">
       <Header />
       <HeaderContent />
       <MainContent />
       <SocialMediaInfo />
     </div>
-
-
-
   );
 }
 export default Home;
