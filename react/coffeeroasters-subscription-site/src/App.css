@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: #FEFCF7;
+}
+
+.container {
+  margin-top: 44px;
+}
+
+
+
+
+/* .create-plan-description { */
+/* background-image: url('/assets/home/desktop/image-hero-coffeepress.jpg'); */
+/* background-size: cover; */
+/* Resmi div'e sığdır */
+/* background-repeat: no-repeat; */
+/* Tekrar etmeyi engelle */
+/* background-position: center; */
+/* Resmi ortala */
+/* Diğer stillendirmeler... */
+/* width: 1720px;
+  height: 800px;
+  border-radius: 10px;
+} */
