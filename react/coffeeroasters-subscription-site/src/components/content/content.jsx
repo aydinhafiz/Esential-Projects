@@ -1,6 +1,7 @@
 import SContent from "./content.styles";
 import CreatePlanInfo from "./create-plan-info";
 import TypesOfCoffee from "./types-of-coffee";
+import WhyChooseUs from "./why-choose-us";
 // import "/assets/home/desktop/image-gran-espresso.png"
 // import "/assets/home/desktop/image-planalto.png"
 // import "/assets/home/desktop/image-piccollo.png"
@@ -59,34 +60,7 @@ function Content() {
     <SContent>
       <CreatePlanInfo />
       <TypesOfCoffee coffeeData={coffeeTypesData} />
-      <div className="why-choose-us">
-        <div className="why-choose-us-intro">
-          <h2 className="why-choose-us-title">Why choose us?</h2>
-          <p className="why-choose-us-description">
-            A large part of our role is choosing which particular coffees will
-            be featured in our range. This means working closely with the best
-            coffee growers to give you a more impactful experience on every
-            level.
-          </p>
-        </div>
-        <div className="why-choose-us-boxes">
-          {whyChooseUsAspectsData.map(function (props) {
-            return (
-              <div className="choose-us-box">
-                <img
-                  src={props.chooseUsImg}
-                  alt=""
-                  className="choose-box-img"
-                />
-                <h3 className="choose-box-title">{props.chooseUsTitle}</h3>
-                <p className="choose-box-description">
-                  {props.chooseUsDescription}
-                </p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <WhyChooseUs aspectsData={whyChooseUsAspectsData} />
     </SContent>
   );
 }

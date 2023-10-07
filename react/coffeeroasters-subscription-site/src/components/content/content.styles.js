@@ -64,7 +64,7 @@ export const SCreatePlanInfo = styled.div`
 
 export const STypesOfCoffee = styled.div`
   margin-top: 250px;
-  margin-bottom: 393px;
+  margin-bottom: 188px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -118,15 +118,13 @@ export const STypesOfCoffee = styled.div`
   }
 `;
 
-const SContent = styled.div`
-  .why-choose-us {
-    border-radius: 10px;
-    background: #2c343e;
-    position: relative;
-    padding: 112px 450px 230px 450px;
-    /* width: 1280px;
+export const SWhyChooseUs = styled.div`
+  border-radius: 10px;
+  background: #2c343e;
+  position: relative;
+  padding: 112px 450px 230px 450px;
+  /* width: 1280px;
     height: 577px; */
-  }
 
   .why-choose-us-intro {
     display: flex;
@@ -211,6 +209,8 @@ const SContent = styled.div`
     margin-right: 30px;
   }
 `;
+
+const SContent = styled.div``;
 
 export default SContent;
 
