@@ -1,7 +1,6 @@
 import SContent from "./content.styles";
 import CreatePlanInfo from "./create-plan-info";
 import TypesOfCoffee from "./types-of-coffee";
-import coffeeBean from "../../components/icon-coffee-bean.svg";
 // import "/assets/home/desktop/image-gran-espresso.png"
 // import "/assets/home/desktop/image-planalto.png"
 // import "/assets/home/desktop/image-piccollo.png"
@@ -34,6 +33,27 @@ const coffeeTypesData = [
   },
 ];
 
+const whyChooseUsAspectsData = [
+  {
+    chooseUsImg: "/assets/home/desktop/icon-coffee-bean.svg",
+    chooseUsTitle: "Best Quality",
+    chooseUsDescription:
+      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+  },
+  {
+    chooseUsImg: "/assets/home/desktop/icon-gift.svg",
+    chooseUsTitle: "Best Quality",
+    chooseUsDescription:
+      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+  },
+  {
+    chooseUsImg: "/assets/home/desktop/icon-truck.svg",
+    chooseUsTitle: "Best Quality",
+    chooseUsDescription:
+      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+  },
+];
+
 function Content() {
   return (
     <SContent>
@@ -50,14 +70,21 @@ function Content() {
           </p>
         </div>
         <div className="why-choose-us-boxes">
-          <div className="choose-us-box">
-            <img src={coffeeBean} alt="" className="choose-box-img" />
-            <h3 className="choose-box-title">Best quality</h3>
-            <p className="choose-box-description">
-              Discover an endless variety of the world’s best artisan coffee
-              from each of our roasters.
-            </p>
-          </div>
+          {whyChooseUsAspectsData.map(function (props) {
+            return (
+              <div className="choose-us-box">
+                <img
+                  src={props.chooseUsImg}
+                  alt=""
+                  className="choose-box-img"
+                />
+                <h3 className="choose-box-title">{props.chooseUsTitle}</h3>
+                <p className="choose-box-description">
+                  {props.chooseUsDescription}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </SContent>

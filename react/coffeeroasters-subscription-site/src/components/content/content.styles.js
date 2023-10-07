@@ -122,8 +122,10 @@ const SContent = styled.div`
   .why-choose-us {
     border-radius: 10px;
     background: #2c343e;
-    width: 1280px;
-    height: 577px;
+    position: relative;
+    padding: 112px 450px 230px 450px;
+    /* width: 1280px;
+    height: 577px; */
   }
 
   .why-choose-us-intro {
@@ -131,7 +133,7 @@ const SContent = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 170px;
+    padding-top: 112px;
   }
 
   .why-choose-us-title {
@@ -192,6 +194,21 @@ const SContent = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 26px; /* 162.5% */
+  }
+
+  .why-choose-us-boxes {
+    margin-top: 86px;
+    display: flex;
+    position: absolute;
+    left: -1px;
+  }
+
+  .choose-us-box:nth-child(1) {
+    margin-left: 85px;
+    margin-right: 30px;
+  }
+  .choose-us-box:nth-child(2) {
+    margin-right: 30px;
   }
 `;
 
