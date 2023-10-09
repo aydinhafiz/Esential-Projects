@@ -4,6 +4,7 @@ import { SWhyChooseUs } from "./content.styles";
 function WhyChooseUs(props) {
   const aspectsData = props.aspectsData;
   return (
+    
     <SWhyChooseUs>
       <div className="why-choose-us-intro">
         <h2 className="why-choose-us-title">Why choose us?</h2>
