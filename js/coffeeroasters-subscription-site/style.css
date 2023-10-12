@@ -12,7 +12,10 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    width: 90%;
 }
+
+
 
 .header {
     display: flex;
@@ -25,6 +28,15 @@ body {
 .options {
     display: flex;
 }
+
+.ham-button {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+
+
 
 .elements:nth-child(2) {
     margin: 0px 33px;
@@ -49,30 +61,32 @@ body {
 
 .create-plan-info {
     position: relative;
-}
-
-.create-plan-info__image {
+    background-image: url("./assets/home/desktop/image-hero-coffeepress.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 10px;
-    position: absolute;
-    z-index: -1;
+    padding: 117px 85px;
+    background-position: 50% 50%;
 }
 
-.create-plan-info__description {
+
+
+/* .create-plan-info__description {
     padding-left: 86px;
     padding-top: 160px;
-}
+} */
 
 
 .create-plan-info-description__title {
     color: #FEFCF7;
-    font-family: Fraunces 9pt;
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
     line-height: 72px;
     /* 100% */
-    width: 493px;
+    /* width: 493px; */
     margin-bottom: 32px;
+    max-width: 493px;
 }
 
 .create-plan-info-descriptiono__paragraph {
@@ -83,7 +97,7 @@ body {
     font-weight: 400;
     line-height: 26px;
     /* 162.5% */
-    width: 445px;
+    max-width: 445px;
     margin-bottom: 56px;
 }
 
@@ -108,4 +122,23 @@ body {
 .create-plan-info-description__button:hover {
     border-radius: 6px;
     background: #66D2CF;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .options {
+        display: none;
+    }
+
+    .ham-button {
+        display: block;
+    }
+
+    .create-plan-info {
+
+        background-image: url("./assets/home/tablet/image-hero-coffeepress.jpg");
+
+    }
+
 }
