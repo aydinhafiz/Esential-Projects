@@ -1,10 +1,29 @@
 import React from "react";
-import { SWhyChooseUs } from "./content.styles";
+import { SWhyChooseUs } from "./why-choose-us.styles";
+
+const whyChooseUsAspectsData = [
+  {
+    chooseUsImg: "/assets/home/desktop/icon-coffee-bean.svg",
+    chooseUsTitle: "Best Quality",
+    chooseUsDescription:
+      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+  },
+  {
+    chooseUsImg: "/assets/home/desktop/icon-gift.svg",
+    chooseUsTitle: "Best Quality",
+    chooseUsDescription:
+      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+  },
+  {
+    chooseUsImg: "/assets/home/desktop/icon-truck.svg",
+    chooseUsTitle: "Best Quality",
+    chooseUsDescription:
+      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+  },
+];
 
 function WhyChooseUs(props) {
-  const aspectsData = props.aspectsData;
   return (
-    
     <SWhyChooseUs>
       <div className="why-choose-us-intro">
         <h2 className="why-choose-us-title">Why choose us?</h2>
@@ -15,7 +34,7 @@ function WhyChooseUs(props) {
         </p>
       </div>
       <div className="why-choose-us-boxes">
-        {aspectsData.map(function (props) {
+        {whyChooseUsAspectsData.map(function (props) {
           return (
             <div className="choose-us-box">
               <img src={props.chooseUsImg} alt="" className="choose-box-img" />
