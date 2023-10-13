@@ -54,4 +54,10 @@ export const STypesOfCoffee = styled.div`
     z-index: -1;
     opacity: 0.5;
   }
+
+  @media only screen and (max-width: 600px) {
+    .coffee-type {
+      max-width: 573px;
+    }
+  }
 `;

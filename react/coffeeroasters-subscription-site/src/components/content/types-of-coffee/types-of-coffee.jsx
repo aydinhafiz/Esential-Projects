@@ -31,11 +31,11 @@ const coffeeTypesData = [
 function TypesOfCoffee() {
   return (
     <STypesOfCoffee>
-      <img
+      {/* <img
         className="our-collection"
         src="/assets/home/desktop/ourcollection.png"
         alt=""
-      />
+      /> */}
 
       {coffeeTypesData.map(function (props) {
         return (

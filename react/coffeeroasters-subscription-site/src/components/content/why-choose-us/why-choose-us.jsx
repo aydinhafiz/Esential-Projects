@@ -1,26 +1,26 @@
 import React from "react";
 import { SWhyChooseUs } from "./why-choose-us.styles";
 
-const whyChooseUsAspectsData = [
-  {
-    chooseUsImg: "/assets/home/desktop/icon-coffee-bean.svg",
-    chooseUsTitle: "Best Quality",
-    chooseUsDescription:
-      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
-  },
-  {
-    chooseUsImg: "/assets/home/desktop/icon-gift.svg",
-    chooseUsTitle: "Best Quality",
-    chooseUsDescription:
-      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
-  },
-  {
-    chooseUsImg: "/assets/home/desktop/icon-truck.svg",
-    chooseUsTitle: "Best Quality",
-    chooseUsDescription:
-      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
-  },
-];
+// const whyChooseUsAspectsData = [
+//   {
+//     chooseUsImg: "/assets/home/desktop/icon-coffee-bean.svg",
+//     chooseUsTitle: "Best Quality",
+//     chooseUsDescription:
+//       "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+//   },
+//   {
+//     chooseUsImg: "/assets/home/desktop/icon-gift.svg",
+//     chooseUsTitle: "Best Quality",
+//     chooseUsDescription:
+//       "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+//   },
+//   {
+//     chooseUsImg: "/assets/home/desktop/icon-truck.svg",
+//     chooseUsTitle: "Best Quality",
+//     chooseUsDescription:
+//       "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+//   },
+// ];
 
 function WhyChooseUs(props) {
   return (
@@ -33,7 +33,7 @@ function WhyChooseUs(props) {
           growers to give you a more impactful experience on every level.
         </p>
       </div>
-      <div className="why-choose-us-boxes">
+      {/* <div className="why-choose-us-boxes">
         {whyChooseUsAspectsData.map(function (props) {
           return (
             <div className="choose-us-box">
@@ -45,7 +45,7 @@ function WhyChooseUs(props) {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </SWhyChooseUs>
   );
 }

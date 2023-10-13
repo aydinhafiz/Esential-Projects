@@ -4,7 +4,7 @@ export const SWhyChooseUs = styled.div`
   border-radius: 10px;
   background: #2c343e;
   position: relative;
-  padding: 112px 450px 230px 450px;
+  padding: 112px 370px 286px 370px;
   /* width: 1280px;
     height: 577px; */
 
@@ -24,22 +24,19 @@ export const SWhyChooseUs = styled.div`
     font-style: normal;
     font-weight: 900;
     line-height: 48px; /* 120% */
-    width: 329px;
   }
 
   .why-choose-us-description {
     color: #fefcf7;
     text-align: center;
-    font-family: Barlow;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px; /* 162.5% */
     opacity: 0.8;
-    width: 540px;
   }
   .choose-us-box {
-    width: 350px;
+    /* width: 350px; */
     height: 382px;
     border-radius: 8px;
     background: #0e8784;
@@ -89,5 +86,12 @@ export const SWhyChooseUs = styled.div`
   }
   .choose-us-box:nth-child(2) {
     margin-right: 30px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    border-radius: 10px;
+    background: #2c343e;
+    position: relative;
+    padding: 64px 24px 0px 24px;
   }
 `;
