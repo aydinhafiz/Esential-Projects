@@ -1,4 +1,5 @@
 import SContent from "./content.styles";
+import HowItWorks from "./how-it-works/how-it-works";
 import TypesOfCoffee from "./types-of-coffee/types-of-coffee";
 import WhyChooseUs from "./why-choose-us/why-choose-us";
 // import "/assets/home/desktop/image-gran-espresso.png"
@@ -11,6 +12,7 @@ function Content() {
     <SContent>
       <TypesOfCoffee />
       <WhyChooseUs />
+      <HowItWorks />
     </SContent>
   );
 }
