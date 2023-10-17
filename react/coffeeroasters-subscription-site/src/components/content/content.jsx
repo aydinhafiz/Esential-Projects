@@ -12,7 +12,7 @@ function Content() {
     <SContent>
       <TypesOfCoffee />
       <WhyChooseUs />
-      <HowItWorks />
+      {/* <HowItWorks /> */}
     </SContent>
   );
 }

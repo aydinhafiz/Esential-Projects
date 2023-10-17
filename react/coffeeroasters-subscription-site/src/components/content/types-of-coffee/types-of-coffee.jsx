@@ -1,5 +1,6 @@
 import React from "react";
 import { STypesOfCoffee } from "./types-of-coffe.styles";
+import CoffeeTypeBox from "./coffee-type-box";
 
 const coffeeTypesData = [
   {
@@ -38,15 +39,7 @@ function TypesOfCoffee() {
       /> */}
 
       {coffeeTypesData.map(function (props) {
-        return (
-          <div className="coffee-type" key={props.coffeeType}>
-            <img src={props.coffeImg} alt="" className="coffe-type__img" />
-            <h3 className="coffee-type__title">{props.coffeeType}</h3>
-            <p className="coffee-type__description">
-              {props.coffeeDescription}
-            </p>
-          </div>
-        );
+        return <CoffeeTypeBox {...props} />;
       })}
     </STypesOfCoffee>
   );

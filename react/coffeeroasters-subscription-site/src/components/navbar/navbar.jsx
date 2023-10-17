@@ -11,7 +11,7 @@ function Navbar() {
         <span className="elements">CREATE YOUR PLAN</span>
       </div>
 
-      <button class="ham-button">
+      <button className="ham-button">
         <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
       </button>
     </SHeader>

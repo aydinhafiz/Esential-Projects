@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SHeader = styled.div`
+  margin-bottom: 250px;
   position: relative;
   background-image: url("/assets/home/desktop/image-hero-coffeepress.jpg");
   background-size: cover;
