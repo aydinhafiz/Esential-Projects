@@ -5,23 +5,6 @@ function HowItWorks() {
   return (
     <SHowWorks>
       <h2 className="how-it-works-title">How it works</h2>
-
-      <div className="steps-circle">
-        
-        <span className="step"></span>
-
-        <span className="step-line"></span>
-
-        <span className="step"></span>
-
-        <span className="step-line"></span>
-
-        <span className="step"></span>
-      </div>
-
-      <div className="steps-info">
-        <div className="step-info"></div>
-      </div>
     </SHowWorks>
   );
 }

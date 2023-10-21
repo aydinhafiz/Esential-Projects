@@ -5,8 +5,10 @@ function WhyChooseUsBox({ chooseUsImg, chooseUsTitle, chooseUsDescription }) {
   return (
     <SWhyChooseBox>
       <img src={chooseUsImg} alt="" className="choose-box-img" />
-      <h3 className="choose-box-title">{chooseUsTitle}</h3>
-      <p className="choose-box-description">{chooseUsDescription}</p>
+      <div className="choose-box-text">
+        <h3 className="choose-box-title">{chooseUsTitle}</h3>
+        <p className="choose-box-description">{chooseUsDescription}</p>
+      </div>
     </SWhyChooseBox>
   );
 }

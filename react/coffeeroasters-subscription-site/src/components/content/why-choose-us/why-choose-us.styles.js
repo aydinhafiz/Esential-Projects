@@ -1,27 +1,49 @@
 import styled from "styled-components";
 
 export const SWhyChooseUs = styled.div`
-  border-radius: 10px;
-  background: #2c343e;
   position: relative;
   padding: 100px 80px 0px 80px;
-  height: 577px;
+  &::after {
+    content: "";
+    background: #2c343e;
+    top: 0;
+    right: 0;
+    position: absolute;
+    height: 577px;
+    width: 100%;
+    border-radius: 10px;
+    z-index: -1;
+  }
+  /* height: 577px; */
+
+  @media only screen and (max-width: 890px) {
+    padding: 56px;
+  }
 
   .why-choose-us-intro {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    margin-bottom: 86px;
+    @media only screen and (max-width: 890px) {
+      margin-bottom: 70px;
+    }
   }
 
   .why-choose-us-title {
     color: #fefcf7;
-    text-align: center;
     font-size: 40px;
     font-style: normal;
     font-weight: 900;
     line-height: 48px;
     margin-bottom: 32px;
+
+    @media only screen and (max-width: 890px) {
+      font-size: 32px;
+      margin-bottom: 24px;
+    }
   }
 
   .why-choose-us-description {
@@ -32,14 +54,21 @@ export const SWhyChooseUs = styled.div`
     line-height: 26px;
     opacity: 0.8;
     max-width: 538px;
-    text-align: center;
+
+    @media only screen and (max-width: 890px) {
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 
   .why-choose-us-boxes {
-    margin-top: 86px;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
+    @media only screen and (max-width: 890px) {
+      gap: 24px;
+    }
   }
 
   .choose-us-box:nth-child(1) {
@@ -50,10 +79,7 @@ export const SWhyChooseUs = styled.div`
     margin-right: 30px;
   }
 
-  @media only screen and (max-width: 600px) {
-    border-radius: 10px;
-    background: #2c343e;
-    position: relative;
+  /* @media only screen and (max-width: 600px) {
     padding: 64px 24px 0px 24px;
-  }
+  } */
 `;
