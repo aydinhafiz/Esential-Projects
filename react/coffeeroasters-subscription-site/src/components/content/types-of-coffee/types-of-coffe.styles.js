@@ -9,6 +9,10 @@ export const STypesOfCoffee = styled.div`
   position: relative;
   gap: 30;
 
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
   .our-collection {
     position: absolute;
     color: #83888f;
@@ -25,9 +29,10 @@ export const STypesOfCoffee = styled.div`
     opacity: 0.5;
   }
 
+  /* 
   @media only screen and (max-width: 600px) {
     .coffee-type {
       max-width: 573px;
     }
-  }
+  } */
 `;

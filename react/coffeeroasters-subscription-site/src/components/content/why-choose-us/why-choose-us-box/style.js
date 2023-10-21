@@ -21,10 +21,20 @@ export const SWhyChooseBox = styled.div`
     padding: 41px 48px 41px 70px;
   }
 
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    max-width: 279px;
+    padding: 72px 33.5px 51px 33.5px;
+  }
+
   .choose-box-text {
     @media only screen and (max-width: 890px) {
       text-align: start;
       margin-left: 55px;
+    }
+    @media only screen and (max-width: 600px) {
+      text-align: center;
+      margin-left: 0px;
     }
   }
 
@@ -32,6 +42,9 @@ export const SWhyChooseBox = styled.div`
     margin-bottom: 56px;
     @media only screen and (max-width: 890px) {
       margin-bottom: 0;
+    }
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 56px;
     }
   }
 
@@ -45,6 +58,9 @@ export const SWhyChooseBox = styled.div`
     @media only screen and (max-width: 890px) {
       margin-bottom: 16px;
     }
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 24px;
+    }
   }
 
   .choose-box-description {
@@ -53,5 +69,9 @@ export const SWhyChooseBox = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+    @media only screen and (max-width: 600px) {
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
 `;

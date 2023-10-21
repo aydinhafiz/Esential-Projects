@@ -20,6 +20,17 @@ export const SWhyChooseUs = styled.div`
     padding: 56px;
   }
 
+  @media only screen and (max-width: 600px) {
+    padding: 64px 24px 0px 24px;
+    &::after {
+      content: "";
+      height: 902px;
+      width: 100%;
+      border-radius: 10px;
+      z-index: -1;
+    }
+  }
+
   .why-choose-us-intro {
     display: flex;
     flex-direction: column;
@@ -29,6 +40,9 @@ export const SWhyChooseUs = styled.div`
     margin-bottom: 86px;
     @media only screen and (max-width: 890px) {
       margin-bottom: 70px;
+    }
+    @media only screen and (max-width: 600px) {
+      background: rgba(44, 52, 62, 0.5);
     }
   }
 
@@ -44,7 +58,17 @@ export const SWhyChooseUs = styled.div`
       font-size: 32px;
       margin-bottom: 24px;
     }
+
+    @media only screen and (max-width: 600px) {
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 24px;
+    }
   }
+
+// WHY CHOOSE US SECTİON ında 422 px den sonra sağ terefe background işlemir ve orası ağ olur
+// Pixel kiçildikçe sağ ve yuxarı terefden ağ olur.
+
 
   .why-choose-us-description {
     color: #fefcf7;
@@ -58,6 +82,10 @@ export const SWhyChooseUs = styled.div`
     @media only screen and (max-width: 890px) {
       font-size: 15px;
       line-height: 25px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      max-width: 279px;
     }
   }
 
