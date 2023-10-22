@@ -1,9 +1,9 @@
 import React from "react";
-import { SHeader } from "./header.styles";
+import { SHomeHeader } from "./header.styles";
 
 function Header() {
   return (
-    <SHeader>
+    <SHomeHeader>
       <div className="create-plan-info__description">
         <h2 className="create-plan-info-description__title">
           Great coffee made simple.
@@ -17,7 +17,7 @@ function Header() {
           Create your plan
         </button>
       </div>
-    </SHeader>
+    </SHomeHeader>
   );
 }
 

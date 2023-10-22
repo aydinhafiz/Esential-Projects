@@ -1,20 +1,23 @@
 import React from "react";
-import SHeader from "./navbar.styles";
+import SNavbar from "./navbar.styles";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <SHeader>
+    <SNavbar>
       <img src="/assets/shared/desktop/logo.svg" alt="" className="logo-img" />
       <div className="options">
         <span className="elements">HOME</span>
-        <span className="elements">ABOUT US</span>
+        <Link to="About-Us" className="route-about" >
+          <span className="elements">ABOUT US</span>
+        </Link>
         <span className="elements">CREATE YOUR PLAN</span>
       </div>
 
       <button className="ham-button">
         <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
       </button>
-    </SHeader>
+    </SNavbar>
   );
 }
 

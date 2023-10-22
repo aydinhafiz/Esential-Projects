@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SHeader = styled.div`
+const SNavbar = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,20 +17,28 @@ const SHeader = styled.div`
     border: none;
   }
 
-  .elements:nth-child(2) {
-    margin: 0px 33px;
+  .route-about {
+    text-decoration: none;
   }
 
   .elements {
+    display: flex;
+    align-items: center;
+
     color: #83888f;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: 15px;
-    /* 125% */
+
     letter-spacing: 0.923px;
     text-transform: uppercase;
+
     cursor: pointer;
+  }
+
+  .elements:nth-child(1) {
+    margin-right: 33px;
   }
 
   .elements:hover {
@@ -53,4 +61,4 @@ const SHeader = styled.div`
   }
 `;
 
-export default SHeader;
+export default SNavbar;
