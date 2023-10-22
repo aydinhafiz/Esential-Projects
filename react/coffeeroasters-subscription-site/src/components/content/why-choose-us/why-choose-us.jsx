@@ -11,15 +11,15 @@ const whyChooseUsAspectsData = [
   },
   {
     chooseUsImg: "/assets/home/desktop/icon-gift.svg",
-    chooseUsTitle: "Best Quality",
+    chooseUsTitle: "Exclusive benefits",
     chooseUsDescription:
-      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+      "Special offers and swag when you subscribe, including 30% off your first shipment.",
   },
   {
     chooseUsImg: "/assets/home/desktop/icon-truck.svg",
-    chooseUsTitle: "Best Quality",
+    chooseUsTitle: "Free Shipping",
     chooseUsDescription:
-      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+      "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.",
   },
 ];
 
