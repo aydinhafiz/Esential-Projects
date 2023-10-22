@@ -1,5 +1,6 @@
 import React from "react";
 import { SCountryCenterInfo } from "./country-center-info.style";
+import CenterInfoBox from "./center-info-box";
 
 const centerCountryData = [
   {
@@ -34,34 +35,10 @@ function CountryCenterInfo(props) {
       <h2 className="country-center-info-title">Our headquarters</h2>
 
       <div className="center-info-boxes">
-        {centerCountryData.map(function (props, i) {
-          return (
-            <div className="country-center-info-box" key={props.countryName}>
-              <img
-                src={props.countryImg}
-                alt=""
-                className="country-center-info-box-img"
-              />
-              <h2 className="country-center-info-box-title">
-                {props.countryName}
-              </h2>
-              <div className="country-center-info-box-description">
-                <span className="center-adress-description">
-                  {props.contactAdressStreet}
-                </span>
-                <span className="center-adress-description">
-                  {props.contactAdressCity}
-                </span>
-                <span className="center-adress-description">
-                  {props.contactAdress3}
-                </span>
-                <span className="center-adress-description">
-                  {props.contactNumber}
-                </span>
-              </div>
-            </div>
-          );
+        {centerCountryData.map(function (props) {
+          return <CenterInfoBox {...props} />;
         })}
+        ;
       </div>
     </SCountryCenterInfo>
   );
