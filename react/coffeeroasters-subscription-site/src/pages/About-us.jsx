@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar/navbar";
 import { SAboutUs } from "../components/about-us/about-us.style";
 import AboutUsHeader from "../components/about-us-header/about-us-header";
+import AboutUsContent from "../components/about-us-content/about-us-content";
 
 function AboutUs() {
   return (
@@ -9,32 +10,7 @@ function AboutUs() {
       <SAboutUs>
         <Navbar />
         <AboutUsHeader />
-        <div className="about-us-content">
-          <div className="our-word-part">
-            <img
-              src="/assets/about/desktop/image-commitment.jpg"
-              alt=""
-              className="our-word-img"
-            />
-            <div className="our-word-text">
-              <h2 className="our-word-title">Our commitment</h2>
-              <p className="our-word-description">
-                We’re built on a simple mission and a commitment to doing good
-                along the way. We want to make it easy for you to discover and
-                brew the world’s best coffee at home. It all starts at the
-                source. To locate the specific lots we want to purchase, we
-                travel nearly 60 days a year trying to understand the challenges
-                and opportunities in each of these places. We collaborate with
-                exceptional coffee growers and empower a global community of
-                farmers through with well above fair-trade benchmarks. We also
-                offer training, support farm community initiatives, and invest
-                in coffee plant science. Curating only the finest blends, we
-                roast each lot to highlight tasting profiles distinctive to
-                their native growing region.
-              </p>
-            </div>
-          </div>
-        </div>
+        <AboutUsContent />
       </SAboutUs>
     </div>
   );
