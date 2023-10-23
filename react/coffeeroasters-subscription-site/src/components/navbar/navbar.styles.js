@@ -17,7 +17,7 @@ const SNavbar = styled.div`
     border: none;
   }
 
-  .route-about {
+  .route-navbar {
     text-decoration: none;
   }
 

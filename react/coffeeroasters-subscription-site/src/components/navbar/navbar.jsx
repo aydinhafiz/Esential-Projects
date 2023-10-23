@@ -7,8 +7,10 @@ function Navbar() {
     <SNavbar>
       <img src="/assets/shared/desktop/logo.svg" alt="" className="logo-img" />
       <div className="options">
-        <span className="elements">HOME</span>
-        <Link to="About-Us" className="route-about" >
+        <Link to="/" className="route-navbar">
+          <span className="elements">HOME</span>
+        </Link>
+        <Link to="/About-Us" className="route-navbar">
           <span className="elements">ABOUT US</span>
         </Link>
         <span className="elements">CREATE YOUR PLAN</span>
