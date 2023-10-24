@@ -34,7 +34,6 @@ function CountryCenterInfo() {
     <SCountryCenterInfo>
       <h2 className="country-center-info-title">Our headquarters</h2>
 
-
       <div className="center-info-boxes">
         {centerCountryData.map(function (props) {
           return <CenterInfoBox {...props} />;
