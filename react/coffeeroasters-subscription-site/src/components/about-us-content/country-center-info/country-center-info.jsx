@@ -39,6 +39,7 @@ function CountryCenterInfo() {
           return <CenterInfoBox {...props} />;
         })}
       </div>
+      
     </SCountryCenterInfo>
   );
 }
