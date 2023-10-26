@@ -13,7 +13,9 @@ function Navbar() {
         <Link to="/About-Us" className="route-navbar">
           <span className="elements">ABOUT US</span>
         </Link>
-        <span className="elements">CREATE YOUR PLAN</span>
+        <Link to="/Subscribe" className="route-navbar">
+          <span className="elements">CREATE YOUR PLAN</span>
+        </Link>
       </div>
 
       <button className="ham-button">

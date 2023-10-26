@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/About-us";
 import { GlobalStyle } from "./components/global-style/global-style";
+import Subscribe from "./pages/Subscribe";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/About-Us",
     element: <AboutUs />,
+  },
+  {
+    path: "/Subscribe",
+    element: <Subscribe />,
   },
 ]);
 
