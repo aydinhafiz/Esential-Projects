@@ -8,7 +8,9 @@ export const SHowWorks = styled.div`
     font-size: 24px;
     font-style: normal;
     font-weight: 900;
-    line-height: 32px; /* 133.333% */
+    line-height: 32px;
+
+    margin-bottom: 80px;
   }
 
   .steps-circle {
