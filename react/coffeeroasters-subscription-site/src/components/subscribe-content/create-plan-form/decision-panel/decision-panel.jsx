@@ -121,6 +121,7 @@ function DecisionPanel() {
     },
   ]);
 
+  
   return (
     <SDecisionPanel>
       <div className="questions">
