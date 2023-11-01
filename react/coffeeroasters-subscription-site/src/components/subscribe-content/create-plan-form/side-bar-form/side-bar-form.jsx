@@ -1,7 +1,7 @@
 import React from "react";
 import { SSideBarForm } from "./side-bar-form.style";
 
-function SideBarForm() {
+function SideBarForm({ selectedQuestion }) {
   const SideBarStepData = [
     {
       steptitle: "Preferences",
@@ -19,6 +19,7 @@ function SideBarForm() {
       steptitle: "Deliveries",
     },
   ];
+
 
   return (
     <SSideBarForm>

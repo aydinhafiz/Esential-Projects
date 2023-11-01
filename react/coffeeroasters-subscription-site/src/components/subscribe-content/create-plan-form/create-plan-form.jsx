@@ -13,12 +13,7 @@ function CreatePlanForm() {
 
 export default CreatePlanForm;
 
-
-
-
-
 const SCreatePlanForm = styled.div`
   display: flex;
   justify-content: space-between;
 `;
-

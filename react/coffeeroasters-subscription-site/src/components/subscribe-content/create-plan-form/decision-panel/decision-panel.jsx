@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { SDecisionPanel } from "./decision-panel.style";
+import DecisionQuestions from "./decision-questions/decision-questions";
 
 function DecisionPanel() {
   const [questions, setQuestions] = useState([
@@ -121,37 +122,23 @@ function DecisionPanel() {
     },
   ]);
 
-  
+  const [questionOpenStates, setQuestionOpenStates] = useState(
+    questions.map((_, index) => index === 0)
+  );
+
+  const toggleQuestion = (index) => {
+    const newStates = [...questionOpenStates];
+    newStates[index] = !newStates[index];
+    setQuestionOpenStates(newStates);
+  };
+
   return (
     <SDecisionPanel>
-      <div className="questions">
-        {questions.map(function (question) {
-          return (
-            <div className="question">
-              <h3 className="question-title">
-                {question.title}
-                <img
-                  className="question-title-arrow"
-                  src="/assets/plan/desktop/icon-arrow.svg"
-                  alt=""
-                />
-              </h3>
-              <div className="question-options">
-                {question.options.map(function (option) {
-                  return (
-                    <div className="question-default-option">
-                      <h4 className="default-option-title">{option.title}</h4>
-                      <p className="default-option-description">
-                        {option.description}
-                      </p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      <DecisionQuestions
+        questions={questions}
+        toggleQuestion={toggleQuestion}
+        questionOpenStates={questionOpenStates}
+      />
     </SDecisionPanel>
   );
 }
