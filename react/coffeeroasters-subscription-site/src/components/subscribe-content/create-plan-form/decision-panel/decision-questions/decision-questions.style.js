@@ -17,6 +17,7 @@ const SQuestions = styled.div`
     cursor: pointer;
   }
 
+  
   .question-title-arrow {
     padding-left: 80px;
   }
