@@ -18,6 +18,7 @@ const SQuestions = styled.div`
   }
 
   
+  
   .question-title-arrow {
     padding-left: 80px;
   }
