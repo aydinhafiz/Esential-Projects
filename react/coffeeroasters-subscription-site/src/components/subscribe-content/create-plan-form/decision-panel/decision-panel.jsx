@@ -126,6 +126,7 @@ function DecisionPanel() {
     questions.map((_, index) => index === 0)
   );
 
+  
   const toggleQuestion = (index) => {
     const newStates = [...questionOpenStates];
     newStates[index] = !newStates[index];
