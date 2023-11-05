@@ -3,6 +3,7 @@ import { SDecisionPanel } from "./decision-panel.style";
 import DecisionQuestions from "./decision-questions/decision-questions";
 
 function DecisionPanel() {
+  
   const [questions, setQuestions] = useState([
     {
       id: 1,
