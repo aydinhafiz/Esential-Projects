@@ -122,6 +122,7 @@ function DecisionPanel() {
     },
   ]);
 
+  
   const [questionOpenStates, setQuestionOpenStates] = useState(
     questions.map((_, index) => index === 0)
   );
