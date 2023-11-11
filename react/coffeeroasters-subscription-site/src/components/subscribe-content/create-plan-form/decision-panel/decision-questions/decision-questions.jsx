@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SQuestions from "./decision-questions.style";
 import QuestionOptions from "./question-options/question-options";
 
@@ -8,17 +8,23 @@ function DecisionQuestions({ questions, toggleQuestion, questionOpenStates }) {
       {questions.map(function (question, index) {
         return (
           <div className="question" key={question.id}>
-            <h3
-              className="question-title"
-              onClick={() => toggleQuestion(index)}
-            >
-              {question.title}
+            <div className="question-header">
+              <h3
+                className="question-title"
+                onClick={() => toggleQuestion(index)}
+              >
+                {question.title}
+              </h3>
               <img
-                className={"question-title-arrow"}
                 src="/assets/plan/desktop/icon-arrow.svg"
                 alt=""
+                className={
+                  questionOpenStates[index]
+                    ? "question-title-arrow-active"
+                    : "question-title-arrow"
+                }
               />
-            </h3>
+            </div>
             <QuestionOptions
               questionOpenStates={questionOpenStates}
               question={question}

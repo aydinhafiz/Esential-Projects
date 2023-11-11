@@ -134,6 +134,7 @@ function CreatePlanForm() {
 
   const toggleQuestion = (index) => {
     questionOpenStates[index] = !questionOpenStates[index];
+    
     setQuestionOpenStates([...questionOpenStates]);
   };
 

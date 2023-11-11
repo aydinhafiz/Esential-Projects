@@ -5,6 +5,12 @@ const SQuestions = styled.div`
     margin-bottom: 88px;
   }
 
+  .question-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
   .question-title {
     color: #83888f;
     font-family: "Fraunces" 9pt;
@@ -14,13 +20,21 @@ const SQuestions = styled.div`
     line-height: 48px;
 
     margin-bottom: 56px;
+    padding-right: 80px;
     cursor: pointer;
   }
 
-  
-  
   .question-title-arrow {
-    padding-left: 80px;
+    position: absolute;
+    top: 25px;
+    right: 50px;
+  }
+
+  .question-title-arrow-active {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 25px;
+    right: 50px;
   }
 `;
 
