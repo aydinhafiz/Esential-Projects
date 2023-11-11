@@ -1,32 +1,15 @@
 import React from "react";
 import { SSideBarForm } from "./side-bar-form.style";
 
-function SideBarForm({ selectedQuestion }) {
-  const SideBarStepData = [
-    {
-      steptitle: "Preferences",
-    },
-    {
-      steptitle: "Bean Type",
-    },
-    {
-      steptitle: "Quantity",
-    },
-    {
-      steptitle: "Grind Option",
-    },
-    {
-      steptitle: "Deliveries",
-    },
-  ];
-
-
+function SideBarForm({ selectedQuestion, createPlanState }) {
   return (
     <SSideBarForm>
       <div className="side-bar-steps">
-        {SideBarStepData.map(function (props, i) {
-          return <SideBarStep key={i} {...{ ...props, num: i + 1 }} />;
-        })}
+        {createPlanState
+          .map((section) => section.sectionName)
+          .map(function (sectionName, i) {
+            return <SideBarStep key={i} title={sectionName} num={i + 1} />;
+          })}
       </div>
     </SSideBarForm>
   );
@@ -34,11 +17,11 @@ function SideBarForm({ selectedQuestion }) {
 
 export default SideBarForm;
 
-function SideBarStep({ steptitle, num }) {
+function SideBarStep({ title, num }) {
   return (
     <div className="side-bar-step">
       <span className="side-bar-step-num">0{num}</span>
-      <h3 className="side-bar-step-title">{steptitle}</h3>
+      <h3 className="side-bar-step-title">{title}</h3>
     </div>
   );
 }

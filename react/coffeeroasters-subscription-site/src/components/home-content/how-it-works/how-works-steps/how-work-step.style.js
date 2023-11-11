@@ -6,6 +6,12 @@ export const SStep = styled.div`
   padding-top: 80px;
   position: relative;
 
+  ${(props) => {
+    if (props.type === "dark") {
+      return `background-color:#2C343E;`;
+    }
+  }}
+
   &::before {
     content: "";
     height: 31px;
@@ -14,7 +20,15 @@ export const SStep = styled.div`
     border-radius: 50%;
     position: absolute;
     top: 0;
-    background: #fefcf7;
+
+    ${(props) => {
+      if (props.type === "dark") {
+        return `background: #2C343E;`;
+      }
+      if (props.type === "light") {
+        return `background: #fefcf7;`;
+      }
+    }}
   }
 
   &:not(:last-child) {
@@ -53,6 +67,15 @@ export const SStep = styled.div`
     line-height: 36px;
 
     margin-bottom: 42px;
+
+    ${(props) => {
+      if (props.type === "dark") {
+        return `color: #FEFCF7;`;
+      }
+      if (props.type === "light") {
+        return `background: #fefcf7;`;
+      }
+    }}
   }
 
   .step-description {
@@ -62,5 +85,14 @@ export const SStep = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+
+    ${(props) => {
+      if (props.type === "dark") {
+        return `color: #FEFCF7;`;
+      }
+      if (props.type === "light") {
+        return `background: #fefcf7;`;
+      }
+    }}
   }
 `;

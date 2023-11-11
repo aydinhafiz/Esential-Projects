@@ -9,8 +9,7 @@ export const SHowWorks = styled.div`
     font-style: normal;
     font-weight: 900;
     line-height: 32px;
-
-    margin-bottom: 80px;
+    padding-left: 85px;
   }
 
   .steps-circle {
@@ -30,6 +29,27 @@ export const SHowWorks = styled.div`
 
   .step:last-child {
     margin-right: 0px;
+  }
+
+  .how-create-plan-button {
+    color: #fefcf7;
+    text-align: center;
+    font-family: "Fraunces" 9pt;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 25px;
+    border-radius: 6px;
+    background: #0e8784;
+
+    padding: 15px 31px 16px 31px;
+    border: none;
+    margin-left: 85px;
+    cursor: pointer;
+    &:hover {
+      border-radius: 6px;
+      background: #66d2cf;
+    }
   }
 
   /* .step-line {

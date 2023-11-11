@@ -1,5 +1,6 @@
 import React from "react";
 import { SHomeHeader } from "./header.styles";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -13,9 +14,11 @@ function Header() {
           curated artisan coffees from our best roasters delivered directly to
           your door, at your schedule.
         </p>
-        <button className="create-plan-info-description__button">
-          Create your plan
-        </button>
+        <Link to="/Subscribe">
+          <button className="create-plan-info-description__button">
+            Create your plan
+          </button>
+        </Link>
       </div>
     </SHomeHeader>
   );

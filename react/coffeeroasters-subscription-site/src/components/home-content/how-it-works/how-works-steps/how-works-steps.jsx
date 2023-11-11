@@ -2,7 +2,7 @@ import React from "react";
 import { SSteps } from "./how-works-steps.style";
 import HowWorkStep from "./how-work-step";
 
-function Steps() {
+function Steps({type}) {
   const steps = [
     {
       title: "Pick your coffee",
@@ -21,9 +21,9 @@ function Steps() {
     },
   ];
   return (
-    <SSteps>
+    <SSteps type={type}>
       {steps.map(function (step, i) {
-        return <HowWorkStep key={i} {...{ ...step, num: i + 1 }} />;
+        return <HowWorkStep type={type} key={i} {...{ ...step, num: i + 1 }} />;
       })}
     </SSteps>
   );
