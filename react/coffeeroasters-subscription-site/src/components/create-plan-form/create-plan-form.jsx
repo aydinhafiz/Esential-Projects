@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { SDecisionPanel } from "./decision-panel.style";
-import DecisionQuestions from "./decision-questions/decision-questions";
+import SCreatePlanForm from "./create-plan-form.style";
+import FormSideBar from "./form-plan-form/form-side-bar";
+import DecisionPanel from "./decision-panel/decision-panel";
 
-function DecisionPanel({ questionOpenStates, toggleQuestion }) {
-  const [questions, setQuestions] = useState([
+function CreatePlanForm() {
+  const [createPlanState, setCreatePlanState] = useState([
     {
       id: 1,
+      sectionName: "Preferences",
       title: "How do you drink your coffee?",
       options: [
         {
@@ -29,6 +31,7 @@ function DecisionPanel({ questionOpenStates, toggleQuestion }) {
     },
     {
       id: 2,
+      sectionName: "Bean Type",
       title: "What type of coffee?",
       options: [
         {
@@ -53,6 +56,7 @@ function DecisionPanel({ questionOpenStates, toggleQuestion }) {
     },
     {
       id: 3,
+      sectionName: "Quantity",
       title: "How much would you like?",
       options: [
         {
@@ -77,6 +81,7 @@ function DecisionPanel({ questionOpenStates, toggleQuestion }) {
     },
     {
       id: 4,
+      sectionName: "Grind Option",
       title: "Want us to grind them?",
       options: [
         {
@@ -100,6 +105,7 @@ function DecisionPanel({ questionOpenStates, toggleQuestion }) {
     },
     {
       id: 5,
+      sectionName: "Deliveries",
       title: "How often should we deliver?",
       options: [
         {
@@ -123,14 +129,15 @@ function DecisionPanel({ questionOpenStates, toggleQuestion }) {
   ]);
 
   return (
-    <SDecisionPanel>
-      <DecisionQuestions
-        questions={questions}
-        toggleQuestion={toggleQuestion}
-        questionOpenStates={questionOpenStates}
+    <SCreatePlanForm>
+      <FormSideBar
+        sectionName={createPlanState.map(function (sectionName) {
+          return sectionName.sectionName;
+        })}
       />
-    </SDecisionPanel>
+      <DecisionPanel questionsData={createPlanState} />
+    </SCreatePlanForm>
   );
 }
 
-export default DecisionPanel;
+export default CreatePlanForm;
