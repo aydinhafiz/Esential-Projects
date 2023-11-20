@@ -7,6 +7,7 @@ import AboutUsContent from "../components/about-us-content/about-us-content";
 function AboutUs() {
   return (
     <div className="container">
+      
       <SAboutUs>
         <Navbar />
         <AboutUsHeader />
