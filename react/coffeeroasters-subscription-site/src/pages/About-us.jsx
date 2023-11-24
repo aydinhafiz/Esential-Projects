@@ -8,6 +8,7 @@ function AboutUs() {
   return (
     <div className="container">
       <SAboutUs>
+        
         <Navbar />
         <AboutUsHeader />
         <AboutUsContent />
