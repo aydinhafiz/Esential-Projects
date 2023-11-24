@@ -1,11 +1,11 @@
 import React from "react";
 import SFormSideBar from "./form-side-bar.styles";
 
-function FormSideBar({ sectionName }) {
+function FormSideBar({ sectionNames }) {
   return (
     <SFormSideBar>
       <div className="side-bar-step">
-        {sectionName.map(function (section, i) {
+        {sectionNames.map(function (section, i) {
           const num = i + 1;
           return (
             <div className="side-bar-steps" key={section}>

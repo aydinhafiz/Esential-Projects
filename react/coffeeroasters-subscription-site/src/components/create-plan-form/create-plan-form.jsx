@@ -128,14 +128,25 @@ function CreatePlanForm() {
     },
   ]);
 
+  function toggleQuestionAcc(questionId) {
+    const newState = createPlanState.find(
+      (question) => question.id === questionId
+    );
+    newState.open = !newState.open;
+    setCreatePlanState([...createPlanState]);
+  }
+
   return (
     <SCreatePlanForm>
       <FormSideBar
-        sectionName={createPlanState.map(function (sectionName) {
+        sectionNames={createPlanState.map(function (sectionName) {
           return sectionName.sectionName;
         })}
       />
-      <DecisionPanel questionsData={createPlanState} />
+      <DecisionPanel
+        toggleQuestionAcc={toggleQuestionAcc}
+        questionsData={createPlanState}
+      />
     </SCreatePlanForm>
   );
 }

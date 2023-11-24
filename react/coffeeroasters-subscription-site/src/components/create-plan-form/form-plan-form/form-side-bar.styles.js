@@ -8,8 +8,16 @@ const SFormSideBar = styled.div`
     padding-bottom: 24px;
     border-bottom: 1px solid rgba(131, 136, 143, 0.5);
     margin-bottom: 24px;
+    color: #333d4b;
+    opacity: 0.5;
+    cursor: pointer;
+
     &:last-child {
       border-bottom: none;
+    }
+    &:hover {
+      color: #333d4b;
+      opacity: 0.7;
     }
   }
 
@@ -21,9 +29,7 @@ const SFormSideBar = styled.div`
     font-weight: 900;
     line-height: 32px;
     margin-right: 28.5px;
-    &:hover {
-      color: #83888f;
-    }
+    color: inherit;
   }
 
   .steps-title {
@@ -33,10 +39,7 @@ const SFormSideBar = styled.div`
     font-style: normal;
     font-weight: 900;
     line-height: 32px;
-    cursor: pointer;
-    &:hover {
-      color: #333d4b;
-    }
+    color: inherit;
   }
 `;
 
