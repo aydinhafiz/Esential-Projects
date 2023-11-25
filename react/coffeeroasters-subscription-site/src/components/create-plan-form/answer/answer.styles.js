@@ -5,6 +5,7 @@ const SAnswer = styled.div`
   max-width: 228px;
   border-radius: 8px;
   background: #f4f1eb;
+  cursor: pointer;
   &:hover {
     background: #fdd6ba;
   }
