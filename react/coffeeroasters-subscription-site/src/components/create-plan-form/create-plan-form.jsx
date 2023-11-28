@@ -130,7 +130,6 @@ function CreatePlanForm() {
     },
   ]);
 
-  
   function toggleQuestionAcc(questionId) {
     const newState = createPlanState.find(
       (question) => question.id === questionId
