@@ -2,19 +2,7 @@ import React, { useState } from "react";
 import SDecisionPanel from "./decision-panel.styles";
 import Question from "../question";
 
-function DecisionPanel({ questionsData, toggleQuestionAcc }) {
-  // const [optionsIsOpen, setOptionsIsOpen] = useState(
-  //   questionsData.map(() => false)
-  // );
-
-  // function toggleOption(index) {
-  //   setOptionsIsOpen((prevOptions) => {
-  //     const newOptions = [...prevOptions];
-  //     newOptions[index] = !newOptions[index];
-  //     return newOptions;
-  //   });
-  // }
-
+function DecisionPanel({ questionsData, toggleQuestionAcc, chooseAnswer }) {
   return (
     <SDecisionPanel>
       <div className="questions">
@@ -25,6 +13,7 @@ function DecisionPanel({ questionsData, toggleQuestionAcc }) {
               toggleQuestionAcc={toggleQuestionAcc}
               question={question}
               index={index}
+              chooseAnswer={chooseAnswer}
             />
           );
         })}

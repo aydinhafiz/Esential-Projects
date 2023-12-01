@@ -4,7 +4,6 @@ import FormSideBar from "./form-plan-form/form-side-bar";
 import DecisionPanel from "./decision-panel/decision-panel";
 
 function CreatePlanForm() {
-  
   const [createPlanState, setCreatePlanState] = useState([
     {
       id: 1,
@@ -130,12 +129,23 @@ function CreatePlanForm() {
     },
   ]);
 
-  
   function toggleQuestionAcc(questionId) {
     const newState = createPlanState.find(
       (question) => question.id === questionId
     );
     newState.open = !newState.open;
+    setCreatePlanState([...createPlanState]);
+  }
+
+  function chooseAnswer(questionId, answerId) {
+    createPlanState.forEach((question) => {
+      if (question.id === questionId) {
+        question.options.forEach((option) => {
+          console.log(`hii`);
+          option.clicked = option.id === answerId;
+        });
+      }
+    });
     setCreatePlanState([...createPlanState]);
   }
 
@@ -149,6 +159,7 @@ function CreatePlanForm() {
       <DecisionPanel
         toggleQuestionAcc={toggleQuestionAcc}
         questionsData={createPlanState}
+        chooseAnswer={chooseAnswer}
       />
     </SCreatePlanForm>
   );

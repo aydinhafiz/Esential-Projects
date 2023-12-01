@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
-const SAnswer = styled.div`
+const SAnswer = styled.button`
   padding: 32px 28px 84px 28px;
   max-width: 228px;
   border-radius: 8px;
   background: #f4f1eb;
+  border: none;
+
+  ${(props) => (props.$clicked ? "background:black;" : "background:#f4f1eb;")}
+
   cursor: pointer;
   &:hover {
     background: #fdd6ba;

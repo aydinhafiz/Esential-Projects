@@ -2,7 +2,7 @@ import React from "react";
 import Answer from "../answer";
 import SQuestion from "./question.styles";
 
-function Question({ toggleQuestionAcc, question }) {
+function Question({ toggleQuestionAcc, question, chooseAnswer, answer }) {
   return (
     <SQuestion>
       <button
@@ -20,7 +20,15 @@ function Question({ toggleQuestionAcc, question }) {
       {question.open && (
         <div className="answers-panel">
           {question.options.map(function (option) {
-            return <Answer answer={option} key={option.id} />;
+            return (
+              <Answer
+                chooseAnswer={chooseAnswer}
+                $clicked={option.clicked}
+                answer={option}
+                questionId={question.id}
+                key={option.id}
+              />
+            );
           })}
         </div>
       )}
