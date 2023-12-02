@@ -21,6 +21,23 @@ const SFormSideBar = styled.div`
     }
   }
 
+  .side-bar-steps-active {
+    display: flex;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(131, 136, 143, 0.5);
+    margin-bottom: 24px;
+    color: #333d4b;
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      color: #333d4b;
+      opacity: 0.7;
+    }
+  }
+
   .steps-num {
     color: rgba(131, 136, 143, 0.5);
     font-family: "Fraunces" 9pt;

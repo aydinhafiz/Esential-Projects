@@ -155,6 +155,7 @@ function CreatePlanForm() {
         sectionNames={createPlanState.map(function (sectionName) {
           return sectionName.sectionName;
         })}
+        createPlanState={createPlanState}
       />
       <DecisionPanel
         toggleQuestionAcc={toggleQuestionAcc}

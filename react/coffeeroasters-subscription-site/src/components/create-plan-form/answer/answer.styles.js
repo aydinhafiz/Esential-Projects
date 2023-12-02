@@ -7,7 +7,8 @@ const SAnswer = styled.button`
   background: #f4f1eb;
   border: none;
 
-  ${(props) => (props.$clicked ? "background:black;" : "background:#f4f1eb;")}
+  ${(props) =>
+    props.$clicked ? "background:#0E8784; color: #FFF;" : "background:#f4f1eb;"}
 
   cursor: pointer;
   &:hover {
