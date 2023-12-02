@@ -14,7 +14,6 @@ function CreatePlanForm() {
           id: 1,
           title: "Capsule",
           description: "Compatible with Nespresso systems and similar brewers",
-          clicked: true,
         },
         {
           id: 2,
