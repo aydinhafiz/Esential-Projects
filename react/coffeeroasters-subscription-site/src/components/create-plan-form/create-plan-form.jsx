@@ -162,7 +162,6 @@ function CreatePlanForm() {
         chooseAnswer={chooseAnswer}
       />
     </SCreatePlanForm>
-    
   );
 }
 
