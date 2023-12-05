@@ -38,8 +38,8 @@ function TypesOfCoffee() {
         alt=""
       /> */}
 
-      {coffeeTypesData.map(function (props) {
-        return <CoffeeTypeBox {...props} />;
+      {coffeeTypesData.map(function (props, i) {
+        return <CoffeeTypeBox key={props.coffeeType} {...props} />;
       })}
     </STypesOfCoffee>
   );

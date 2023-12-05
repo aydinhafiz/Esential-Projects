@@ -5,7 +5,13 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <SNavbar>
-      <img src="/assets/shared/desktop/logo.svg" alt="" className="logo-img" />
+      <Link to="/">
+        <img
+          src="/assets/shared/desktop/logo.svg"
+          alt=""
+          className="logo-img"
+        />
+      </Link>
       <div className="options">
         <Link to="/" className="route-navbar">
           <span className="elements">HOME</span>

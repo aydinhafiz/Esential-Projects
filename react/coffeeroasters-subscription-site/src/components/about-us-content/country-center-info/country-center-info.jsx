@@ -36,7 +36,7 @@ function CountryCenterInfo() {
 
       <div className="center-info-boxes">
         {centerCountryData.map(function (props) {
-          return <CenterInfoBox {...props} />;
+          return <CenterInfoBox key={props.countryName} {...props} />;
         })}
       </div>
       
