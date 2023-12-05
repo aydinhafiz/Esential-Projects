@@ -37,8 +37,7 @@ function TypesOfCoffee() {
         src="/assets/home/desktop/ourcollection.png"
         alt=""
       /> */}
-
-      {coffeeTypesData.map(function (props, i) {
+      {coffeeTypesData.map(function (props) {
         return <CoffeeTypeBox key={props.coffeeType} {...props} />;
       })}
     </STypesOfCoffee>
