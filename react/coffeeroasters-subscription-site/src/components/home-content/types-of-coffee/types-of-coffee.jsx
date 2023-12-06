@@ -44,4 +44,5 @@ function TypesOfCoffee() {
   );
 }
 
+
 export default TypesOfCoffee;
