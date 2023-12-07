@@ -31,7 +31,35 @@ export const STypeOfCoffeeBox = styled.div`
     @media only screen and (max-width: 600px) {
       margin-bottom: 16px;
     }
+    cursor: pointer;
   }
+
+  .coffee-type__title-active {
+    color: red;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 24px;
+    width: 255px;
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 16px;
+    }
+    cursor: pointer;
+  }
+
+  /* .coffee-type__title-active {
+    color: red;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px;
+    margin-bottom: 24px;
+    width: 255px;
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 16px;
+    }
+  } */
 
   .coffee-type__description {
     color: #333d4b;

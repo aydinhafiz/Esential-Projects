@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { STypesOfCoffee } from "./types-of-coffe.styles";
 import CoffeeTypeBox from "./coffee-type-box";
 
@@ -30,6 +30,30 @@ const coffeeTypesData = [
 ];
 
 function TypesOfCoffee() {
+  const [clickedCoffees, setClickedCoffees] = useState([]);
+
+  useEffect(function () {
+    const clickedCoffees = JSON.parse(localStorage.getItem("clickedCoffees"));
+    setClickedCoffees(clickedCoffees);
+  }, []);
+
+  function handleCoffeeClick(coffeeType) {
+    if (clickedCoffees.includes(coffeeType)) {
+      setClickedCoffees(clickedCoffees.filter((item) => item !== coffeeType));
+      localStorage.setItem(
+        "clickedCoffees",
+        JSON.stringify(clickedCoffees.filter((item) => item !== coffeeType))
+      );
+    } else {
+      setClickedCoffees([...clickedCoffees, coffeeType]);
+      localStorage.setItem(
+        "clickedCoffees",
+        JSON.stringify([...clickedCoffees, coffeeType])
+      );
+    }
+  }
+  console.log(clickedCoffees);
+
   return (
     <STypesOfCoffee>
       {/* <img
@@ -38,11 +62,17 @@ function TypesOfCoffee() {
         alt=""
       /> */}
       {coffeeTypesData.map(function (props) {
-        return <CoffeeTypeBox key={props.coffeeType} {...props} />;
+        return (
+          <CoffeeTypeBox
+            handleCoffeeClick={handleCoffeeClick}
+            clickedCoffees={clickedCoffees}
+            key={props.coffeeType}
+            {...props}
+          />
+        );
       })}
     </STypesOfCoffee>
   );
 }
-
 
 export default TypesOfCoffee;
