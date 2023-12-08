@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SCreatePlanForm from "./create-plan-form.style";
 import FormSideBar from "./form-plan-form/form-side-bar";
 import DecisionPanel from "./decision-panel/decision-panel";
@@ -127,6 +127,10 @@ function CreatePlanForm() {
       ],
     },
   ]);
+  useEffect(function () {
+    const clickedAnswers = JSON.parse(localStorage.getItem("clickedAnswer"));
+    setCreatePlanState([...createPlanState], clickedAnswers);
+  }, []);
 
   function toggleQuestionAcc(questionId) {
     const newState = createPlanState.find(
@@ -140,8 +144,11 @@ function CreatePlanForm() {
     createPlanState.forEach((question) => {
       if (question.id === questionId) {
         question.options.forEach((option) => {
-          console.log(`hii`);
           option.clicked = option.id === answerId;
+          localStorage.setItem(
+            "clickedAnswer",
+            JSON.stringify((option.clicked = option.id === answerId))
+          );
         });
       }
     });
@@ -162,7 +169,6 @@ function CreatePlanForm() {
         chooseAnswer={chooseAnswer}
       />
     </SCreatePlanForm>
-    
   );
 }
 
