@@ -154,7 +154,7 @@ function CreatePlanForm() {
     });
     setCreatePlanState([...createPlanState]);
   }
-
+  
   return (
     <SCreatePlanForm>
       <FormSideBar
@@ -171,5 +171,6 @@ function CreatePlanForm() {
     </SCreatePlanForm>
   );
 }
+
 
 export default CreatePlanForm;
