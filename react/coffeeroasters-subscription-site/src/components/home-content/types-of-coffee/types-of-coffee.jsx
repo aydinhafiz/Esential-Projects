@@ -29,7 +29,6 @@ const coffeeTypesData = [
   },
 ];
 
-
 function TypesOfCoffee() {
   const [clickedCoffees, setClickedCoffees] = useState([]);
 
