@@ -127,6 +127,7 @@ function CreatePlanForm() {
       ],
     },
   ]);
+
   useEffect(function () {
     const clickedAnswers = JSON.parse(localStorage.getItem("clickedAnswer"));
     setCreatePlanState([...createPlanState], clickedAnswers);
@@ -154,7 +155,7 @@ function CreatePlanForm() {
     });
     setCreatePlanState([...createPlanState]);
   }
-  
+
   return (
     <SCreatePlanForm>
       <FormSideBar
@@ -171,6 +172,5 @@ function CreatePlanForm() {
     </SCreatePlanForm>
   );
 }
-
 
 export default CreatePlanForm;
