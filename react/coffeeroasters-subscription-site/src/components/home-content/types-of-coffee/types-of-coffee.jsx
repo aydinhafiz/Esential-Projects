@@ -54,7 +54,6 @@ function TypesOfCoffee() {
   }
   console.log(clickedCoffees);
   
-
   return (
     <STypesOfCoffee>
       {/* <img
