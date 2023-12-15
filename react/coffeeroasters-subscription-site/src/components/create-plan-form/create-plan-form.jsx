@@ -129,8 +129,10 @@ function CreatePlanForm() {
   ]);
 
   useEffect(function () {
-    const clickedAnswers = JSON.parse(localStorage.getItem("clickedAnswer"));
-    setCreatePlanState([...createPlanState], clickedAnswers);
+    const createPlanState = JSON.parse(localStorage.getItem("createPlanState"));
+    if (createPlanState) {
+      setCreatePlanState(createPlanState);
+    }
   }, []);
 
   function toggleQuestionAcc(questionId) {
@@ -139,6 +141,10 @@ function CreatePlanForm() {
     );
     newState.open = !newState.open;
     setCreatePlanState([...createPlanState]);
+    localStorage.setItem(
+      "createPlanState",
+      JSON.stringify([...createPlanState])
+    );
   }
 
   function chooseAnswer(questionId, answerId) {
@@ -146,13 +152,13 @@ function CreatePlanForm() {
       if (question.id === questionId) {
         question.options.forEach((option) => {
           option.clicked = option.id === answerId;
-          localStorage.setItem(
-            "clickedAnswer",
-            JSON.stringify((option.clicked = option.id === answerId))
-          );
         });
       }
     });
+    localStorage.setItem(
+      "createPlanState",
+      JSON.stringify([...createPlanState])
+    );
     setCreatePlanState([...createPlanState]);
   }
 
