@@ -34,7 +34,9 @@ function TypesOfCoffee() {
 
   useEffect(function () {
     const clickedCoffees = JSON.parse(localStorage.getItem("clickedCoffees"));
-    setClickedCoffees(clickedCoffees);
+    if (clickedCoffees) {
+      setClickedCoffees(clickedCoffees);
+    }
   }, []);
 
   function handleCoffeeClick(coffeeType) {

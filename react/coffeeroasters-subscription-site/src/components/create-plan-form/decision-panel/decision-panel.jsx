@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SDecisionPanel from "./decision-panel.styles";
 import Question from "../question";
+import OrderSummary from "../order-summary";
 
 function DecisionPanel({ questionsData, toggleQuestionAcc, chooseAnswer }) {
   return (
@@ -18,6 +19,7 @@ function DecisionPanel({ questionsData, toggleQuestionAcc, chooseAnswer }) {
           );
         })}
       </div>
+      <OrderSummary createPlanState={questionsData} />
     </SDecisionPanel>
   );
 }
