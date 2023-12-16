@@ -10,11 +10,15 @@ export const SHomeHeader = styled.div`
   padding: 117px 85px;
   background-position: 50% 50%;
 
-  /* .create-plan-info__description {
-    padding-left: 86px;
-    padding-top: 160px;
-} */
-
+  @media only screen and (max-width: 375px) {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 100px 24px;
+    width: 327px;
+    background-position: 100% 100%;
+    text-align: center;
+  }
+  /* .create-plan-info__description { padding-left: 86px; padding-top: 160px; } */
   .create-plan-info-description__title {
     color: #fefcf7;
     font-size: 72px;
@@ -25,6 +29,16 @@ export const SHomeHeader = styled.div`
     /* width: 493px; */
     margin-bottom: 32px;
     max-width: 493px;
+
+    @media only screen and (max-width: 375px) {
+      color: #fefcf7;
+      text-align: center;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 40px;
+      width: 279px;
+    }
   }
 
   .create-plan-info-descriptiono__paragraph {
@@ -37,6 +51,17 @@ export const SHomeHeader = styled.div`
     /* 162.5% */
     max-width: 445px;
     margin-bottom: 56px;
+
+    @media only screen and (max-width: 375px) {
+      color: #fefcf7;
+      text-align: center;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+      width: 279px;
+      opacity: 0.7;
+    }
   }
 
   .create-plan-info-description__button {

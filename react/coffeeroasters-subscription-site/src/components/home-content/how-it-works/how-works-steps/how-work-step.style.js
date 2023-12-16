@@ -68,6 +68,14 @@ export const SStep = styled.div`
 
     margin-bottom: 42px;
 
+    @media only screen and (max-width: 600px) {
+      color: #333d4b;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 32px;
+    }
+
     ${(props) => {
       if (props.type === "dark") {
         return `color: #FEFCF7;`;
@@ -85,6 +93,14 @@ export const SStep = styled.div`
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+
+    @media only screen and (max-width: 600px) {
+      color: #333d4b;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+    }
 
     ${(props) => {
       if (props.type === "dark") {
