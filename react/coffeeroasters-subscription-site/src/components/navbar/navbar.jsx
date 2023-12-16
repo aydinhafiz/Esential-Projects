@@ -1,10 +1,12 @@
 import React from "react";
 import SNavbar from "./navbar.styles";
 import { Link } from "react-router-dom";
+import ScrollToTop from "../scroll-to-top";
 
 function Navbar() {
   return (
     <SNavbar>
+      <ScrollToTop />
       <Link to="/">
         <img
           src="/assets/shared/desktop/logo.svg"
