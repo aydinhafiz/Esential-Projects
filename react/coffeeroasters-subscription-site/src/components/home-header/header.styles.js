@@ -10,7 +10,6 @@ export const SHomeHeader = styled.div`
   padding: 117px 85px;
   background-position: 50% 50%;
 
-  
   @media only screen and (max-width: 375px) {
     margin-left: 24px;
     margin-right: 24px;
