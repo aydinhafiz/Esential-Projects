@@ -10,7 +10,6 @@ export const SHomeHeader = styled.div`
   padding: 117px 85px;
   background-position: 50% 50%;
 
-  
   @media only screen and (max-width: 375px) {
     margin-left: 24px;
     margin-right: 24px;
@@ -19,6 +18,7 @@ export const SHomeHeader = styled.div`
     background-position: 100% 100%;
     text-align: center;
   }
+  
   /* .create-plan-info__description { padding-left: 86px; padding-top: 160px; } */
   .create-plan-info-description__title {
     color: #fefcf7;
