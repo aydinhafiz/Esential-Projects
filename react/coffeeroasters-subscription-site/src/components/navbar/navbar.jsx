@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <SNavbar>
       <ScrollToTop />
-      <Link to="/">
+      <Link to="/" className="logo-link">
         <img
           src="/assets/shared/desktop/logo.svg"
           alt=""
@@ -22,7 +22,7 @@ function Navbar() {
           <span className="elements">ABOUT US</span>
         </Link>
         <Link to="/subscribe" className="route-navbar">
-          <span className="elements">CREATE YOUR PLAN</span>
+          <span className="elements no-margin">CREATE YOUR PLAN</span>
         </Link>
       </div>
 

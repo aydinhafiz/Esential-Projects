@@ -33,6 +33,9 @@ export const SStep = styled.div`
 
   &:not(:last-child) {
     padding-right: 95px;
+    @media only screen (max-width: 1000px) {
+      padding-right: 35px;
+    }
   }
 
   &:not(:last-child)::after {

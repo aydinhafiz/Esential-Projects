@@ -9,12 +9,25 @@ const SNavbar = styled.div`
 
   .options {
     display: flex;
+
+    @media only screen and (max-width: 900px) {
+      padding-right: 105px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      display: none;
+    }
   }
 
   .ham-button {
     display: none;
     background-color: transparent;
     border: none;
+
+    @media only screen and (max-width: 400px) {
+      display: block;
+      margin-right: 28px;
+    }
   }
 
   .route-navbar {
@@ -35,9 +48,7 @@ const SNavbar = styled.div`
     text-transform: uppercase;
 
     cursor: pointer;
-  }
 
-  .elements:nth-child(1) {
     margin-right: 33px;
   }
 
@@ -45,18 +56,16 @@ const SNavbar = styled.div`
     color: #333d4b;
   }
 
-  @media only screen and (max-width: 600px) {
-    .options {
-      display: none;
-    }
+  .no-margin {
+    margin-right: 0px;
+  }
 
-    .ham-button {
-      display: block;
-      margin-right: 24px;
+  .logo-img {
+    @media only screen and (max-width: 900px) {
+      margin-left: 105px;
     }
-
-    .logo-img {
-      margin-left: 24px;
+    @media only screen and (max-width: 400px) {
+      margin-left: 25px;
     }
   }
 `;
