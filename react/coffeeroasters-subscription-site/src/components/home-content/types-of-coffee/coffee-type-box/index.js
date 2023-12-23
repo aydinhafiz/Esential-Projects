@@ -13,7 +13,9 @@ function CoffeeTypeBox({
       <img src={coffeImg} alt="" className="coffe-type__img" />
       <h3
         className={
-          clickedCoffees.includes(coffeeType) ? "coffee-type__title-active" : "coffee-type__title"
+          clickedCoffees.includes(coffeeType)
+            ? "coffee-type__title-active"
+            : "coffee-type__title"
         }
         onClick={() => handleCoffeeClick(coffeeType)}
       >

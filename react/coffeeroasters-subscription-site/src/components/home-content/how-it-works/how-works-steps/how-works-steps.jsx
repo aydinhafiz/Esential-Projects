@@ -2,7 +2,7 @@ import React from "react";
 import { SSteps } from "./how-works-steps.style";
 import HowWorkStep from "./how-work-step";
 
-function Steps({type}) {
+function Steps({ type }) {
   const steps = [
     {
       title: "Pick your coffee",

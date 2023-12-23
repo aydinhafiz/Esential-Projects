@@ -1,10 +1,20 @@
 import styled from "styled-components";
 
 export const SStep = styled.div`
-  /* max-width: 380px; */
   max-width: 406px;
   padding-top: 80px;
+
+  @media only screen and (max-width: 900px) {
+    padding-top: 48px;
+  }
   position: relative;
+
+  @media only screen and (max-width: 400px) {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   ${(props) => {
     if (props.type === "dark") {
@@ -21,6 +31,14 @@ export const SStep = styled.div`
     position: absolute;
     top: 0;
 
+    @media only screen and (max-width: 900px) {
+      left: 0;
+    }
+
+    @media only screen and (max-width: 400px) {
+      display: none;
+    }
+
     ${(props) => {
       if (props.type === "dark") {
         return `background: #2C343E;`;
@@ -33,8 +51,8 @@ export const SStep = styled.div`
 
   &:not(:last-child) {
     padding-right: 95px;
-    @media only screen (max-width: 1000px) {
-      padding-right: 35px;
+    @media only screen and (max-width: 900px) {
+      padding-right: 10px;
     }
   }
 
@@ -46,37 +64,59 @@ export const SStep = styled.div`
     top: 17px;
     left: 35px;
     background: #fdd6ba;
+
+    @media only screen and (max-width: 900px) {
+      width: 202px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      display: none;
+    }
   }
 
   .step-num {
     display: inline-block;
 
     color: #fdd6ba;
-    font-family: "Fraunces" 9pt;
+    font-family: "Fraunces";
     font-size: 72px;
     font-style: normal;
     font-weight: 900;
     line-height: 72px;
 
     margin-bottom: 38px;
+
+    @media only screen and (max-width: 900px) {
+      margin-bottom: 42px;
+    }
   }
 
   .step-title {
     color: #333d4b;
-    font-family: "Fraunces" 9pt;
+    font-family: "Fraunces";
     font-size: 32px;
     font-style: normal;
     font-weight: 900;
     line-height: 36px;
 
+    width: 255px;
     margin-bottom: 42px;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 900px) {
       color: #333d4b;
+      font-family: "Fraunces";
       font-size: 28px;
-      font-style: normal;
       font-weight: 900;
       line-height: 32px;
+
+      width: 229px;
+      margin-bottom: 38px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      text-align: center;
+      width: 400px;
+      margin-bottom: 24px;
     }
 
     ${(props) => {
@@ -97,12 +137,20 @@ export const SStep = styled.div`
     font-weight: 400;
     line-height: 26px;
 
-    @media only screen and (max-width: 600px) {
+    width: 285px;
+
+    @media only screen and (max-width: 900px) {
       color: #333d4b;
+      font-family: "Barlow";
       font-size: 15px;
-      font-style: normal;
       font-weight: 400;
       line-height: 25px;
+      width: 223px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      width: 400px;
+      text-align: center;
     }
 
     ${(props) => {

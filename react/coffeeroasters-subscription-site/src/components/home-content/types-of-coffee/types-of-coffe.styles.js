@@ -17,11 +17,11 @@ export const STypesOfCoffee = styled.div`
     position: absolute;
     color: #83888f;
     text-align: center;
-    font-family: Fraunces 9pt;
+    font-family: "Fraunces";
     font-size: 150px;
     font-style: normal;
     font-weight: 900;
-    line-height: 72px; /* 48% */
+    line-height: 72px;
 
     top: -80px;
     left: 80px;
