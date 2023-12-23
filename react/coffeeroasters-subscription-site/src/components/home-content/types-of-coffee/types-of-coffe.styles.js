@@ -13,6 +13,7 @@ export const STypesOfCoffee = styled.div`
     flex-direction: column;
   }
 
+  
   .our-collection {
     position: absolute;
     color: #83888f;
