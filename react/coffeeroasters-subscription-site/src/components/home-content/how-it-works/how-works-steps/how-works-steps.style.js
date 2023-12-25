@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SSteps = styled.div`
   display: flex;
   padding: 80px 85px 64px 84px;
-
+  
   @media only screen and (max-width: 900px) {
     padding: 55px 40px 46px 39px;
   }

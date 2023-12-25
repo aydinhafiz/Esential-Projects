@@ -1,6 +1,6 @@
 import React from "react";
 import { SStep } from "./how-work-step.style";
-
+  
 function HowWorkStep({ num, title, description, type }) {
   return (
     <SStep type={type}>

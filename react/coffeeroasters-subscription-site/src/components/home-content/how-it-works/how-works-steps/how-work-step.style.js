@@ -111,12 +111,30 @@ export const SStep = styled.div`
 
       width: 229px;
       margin-bottom: 38px;
+
+      ${(props) => {
+        if (props.type === "dark") {
+          return `color: #FEFCF7;`;
+        }
+        if (props.type === "light") {
+          return `background: #fefcf7;`;
+        }
+      }}
     }
 
     @media only screen and (max-width: 425px) {
       text-align: center;
       width: 425px;
       margin-bottom: 24px;
+
+      ${(props) => {
+        if (props.type === "dark") {
+          return `color: #FEFCF7;`;
+        }
+        if (props.type === "light") {
+          return `background: #fefcf7;`;
+        }
+      }}
     }
 
     ${(props) => {
@@ -146,11 +164,29 @@ export const SStep = styled.div`
       font-weight: 400;
       line-height: 25px;
       width: 223px;
+
+      ${(props) => {
+        if (props.type === "dark") {
+          return `color: #FEFCF7;`;
+        }
+        if (props.type === "light") {
+          return `background: #fefcf7;`;
+        }
+      }}
     }
 
     @media only screen and (max-width: 425px) {
       width: 425px;
       text-align: center;
+
+      ${(props) => {
+        if (props.type === "dark") {
+          return `color: #FEFCF7;`;
+        }
+        if (props.type === "light") {
+          return `background: #fefcf7;`;
+        }
+      }}
     }
 
     ${(props) => {

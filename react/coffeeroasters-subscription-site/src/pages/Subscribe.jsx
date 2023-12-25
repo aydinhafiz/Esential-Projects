@@ -11,7 +11,7 @@ function Subscribe() {
       <Navbar />
       <SubscribeHeader />
       <Steps type="dark" />
-      <CreatePlanForm />
+      {/* <CreatePlanForm /> */}
       {/* <Footer /> */}
     </div>
   );
