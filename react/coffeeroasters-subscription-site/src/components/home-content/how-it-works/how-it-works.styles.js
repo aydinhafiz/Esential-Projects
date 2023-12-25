@@ -43,6 +43,7 @@ export const SHowWorks = styled.div`
     padding: 15px 31px 16px 31px;
     border: none;
     margin-left: 85px;
+    margin-bottom: 200px;
     cursor: pointer;
     &:hover {
       border-radius: 6px;

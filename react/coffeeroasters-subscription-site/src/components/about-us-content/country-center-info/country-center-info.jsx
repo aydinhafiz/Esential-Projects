@@ -32,14 +32,15 @@ const centerCountryData = [
 function CountryCenterInfo() {
   return (
     <SCountryCenterInfo>
-      <h2 className="country-center-info-title">Our headquarters</h2>
+      <div className="country-center-container">
+        <h2 className="country-center-info-title">Our headquarters</h2>
 
-      <div className="center-info-boxes">
-        {centerCountryData.map(function (props) {
-          return <CenterInfoBox key={props.countryName} {...props} />;
-        })}
+        <div className="center-info-boxes">
+          {centerCountryData.map(function (props) {
+            return <CenterInfoBox key={props.countryName} {...props} />;
+          })}
+        </div>
       </div>
-      
     </SCountryCenterInfo>
   );
 }

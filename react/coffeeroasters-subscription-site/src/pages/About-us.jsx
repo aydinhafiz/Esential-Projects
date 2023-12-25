@@ -10,9 +10,11 @@ function AboutUs() {
     <div className="container">
       <SAboutUs>
         <Navbar />
+
         <AboutUsHeader />
         <AboutUsContent />
-        <Footer/>
+
+        <Footer />
       </SAboutUs>
     </div>
   );

@@ -17,4 +17,4 @@ function AboutUsHeader() {
   );
 }
 
-export default AboutUsHeader;
+export default AboutUsHeader;     

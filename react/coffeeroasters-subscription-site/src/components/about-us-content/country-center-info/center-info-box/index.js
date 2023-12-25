@@ -5,7 +5,7 @@ function CenterInfoBox({
   countryImg,
   countryName,
   contactAdressStreet,
-  contactAdressCity,
+  contactAdressCity,  
   contactAdress3,
   contactNumber,
 }) {

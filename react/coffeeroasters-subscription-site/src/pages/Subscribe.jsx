@@ -12,7 +12,7 @@ function Subscribe() {
       <SubscribeHeader />
       <Steps type="dark" />
       <CreatePlanForm />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

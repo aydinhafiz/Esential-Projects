@@ -4,11 +4,8 @@ import { SOurWord } from "./our-word-part.style";
 function OurWordPart() {
   return (
     <SOurWord>
-      <img
-        src="/assets/about/desktop/image-commitment.jpg"
-        alt=""
-        className="our-word-img"
-      />
+      <div className="our-word-img"></div>
+
       <div className="our-word-text">
         <h2 className="our-word-title">Our commitment</h2>
         <p className="our-word-description">

@@ -20,14 +20,6 @@ export const SHomeHeader = styled.div`
     background-position: 50% 50%;
   }
 
-  @media only screen and (max-width: 425px) {
-    padding: 100px 24px;
-    margin-bottom: 205px;
-    width: 350px;
-    background-image: url("/assets/home/mobile/image-hero-coffeepress.jpg");
-    background-position: 10% 10%;
-  }
-
   .create-plan-info__description {
     @media only screen and (max-width: 425px) {
       display: flex;
