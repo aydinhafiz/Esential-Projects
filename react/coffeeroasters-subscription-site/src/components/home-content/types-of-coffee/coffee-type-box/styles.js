@@ -4,7 +4,7 @@ export const STypeOfCoffeeBox = styled.div`
   margin-right: 30px;
   text-align: center; 
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     margin-bottom: 48px;
     margin-right: 0;
     &:last-child {
@@ -16,7 +16,7 @@ export const STypeOfCoffeeBox = styled.div`
     /* height: 193px; */
     margin-bottom: 71px;
     width: 255px;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       margin-bottom: 24px;
     }
   }
@@ -29,7 +29,7 @@ export const STypeOfCoffeeBox = styled.div`
     line-height: 32px;
     margin-bottom: 24px;
     width: 255px;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       margin-bottom: 16px;
     }
     cursor: pointer;
@@ -43,7 +43,7 @@ export const STypeOfCoffeeBox = styled.div`
     line-height: 32px;
     margin-bottom: 24px;
     width: 255px;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       margin-bottom: 16px;
     }
     cursor: pointer;
@@ -57,7 +57,7 @@ export const STypeOfCoffeeBox = styled.div`
     line-height: 32px;
     margin-bottom: 24px;
     width: 255px;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       margin-bottom: 16px;
     }
   } */
@@ -69,7 +69,7 @@ export const STypeOfCoffeeBox = styled.div`
     font-weight: 400;
     line-height: 26px; /* 162.5% */
     width: 255px;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       font-size: 15px;
       line-height: 25px;
     }

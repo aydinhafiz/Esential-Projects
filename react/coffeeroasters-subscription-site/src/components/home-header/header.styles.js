@@ -20,7 +20,7 @@ export const SHomeHeader = styled.div`
     background-position: 50% 50%;
   }
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     padding: 100px 24px;
     margin-bottom: 205px;
     width: 350px;
@@ -29,7 +29,7 @@ export const SHomeHeader = styled.div`
   }
 
   .create-plan-info__description {
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -54,7 +54,7 @@ export const SHomeHeader = styled.div`
       line-height: 48px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       color: #fefcf7;
       text-align: center;
       font-family: "Fraunces";
@@ -84,7 +84,7 @@ export const SHomeHeader = styled.div`
       line-height: 25px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       color: #fefcf7;
       text-align: center;
       font-family: "Barlow";
@@ -112,7 +112,7 @@ export const SHomeHeader = styled.div`
     border-radius: 6px;
     background: #0e8784;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       padding: 15px 31px 16px 31px;
       color: #fefcf7;
       text-align: center;

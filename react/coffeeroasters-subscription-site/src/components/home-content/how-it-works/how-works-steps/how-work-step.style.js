@@ -9,7 +9,7 @@ export const SStep = styled.div`
   }
   position: relative;
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ export const SStep = styled.div`
       left: 0;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       display: none;
     }
 
@@ -69,7 +69,7 @@ export const SStep = styled.div`
       width: 202px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       display: none;
     }
   }
@@ -99,7 +99,7 @@ export const SStep = styled.div`
     font-weight: 900;
     line-height: 36px;
 
-    width: 255px;
+    width: 75%;
     margin-bottom: 42px;
 
     @media only screen and (max-width: 900px) {
@@ -113,9 +113,9 @@ export const SStep = styled.div`
       margin-bottom: 38px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       text-align: center;
-      width: 400px;
+      width: 425px;
       margin-bottom: 24px;
     }
 
@@ -148,8 +148,8 @@ export const SStep = styled.div`
       width: 223px;
     }
 
-    @media only screen and (max-width: 400px) {
-      width: 400px;
+    @media only screen and (max-width: 425px) {
+      width: 425px;
       text-align: center;
     }
 

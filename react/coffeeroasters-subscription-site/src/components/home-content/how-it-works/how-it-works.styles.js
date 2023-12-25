@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SHowWorks = styled.div`
   margin-top: 200px;
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 425px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +22,7 @@ export const SHowWorks = styled.div`
       padding-left: 39px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       text-align: start;
       margin-right: 24px;
       margin-left: 24px;
@@ -53,7 +53,7 @@ export const SHowWorks = styled.div`
       margin-left: 39px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       margin-right: 55px;
       margin-left: 55px;
     }

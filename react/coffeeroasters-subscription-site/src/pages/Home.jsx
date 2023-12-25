@@ -4,6 +4,7 @@ import "../App.css";
 import Content from "../components/home-content/content";
 import Navbar from "../components/navbar/navbar";
 import Header from "../components/home-header/header";
+import Footer from "../components/footer/footer";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Navbar />
       <Header />
       <Content />
+      <Footer />
     </div>
   );
 }

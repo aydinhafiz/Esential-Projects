@@ -14,7 +14,7 @@ const SNavbar = styled.div`
       padding-right: 105px;
     }
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 750px) {
       display: none;
     }
   }
@@ -24,7 +24,7 @@ const SNavbar = styled.div`
     background-color: transparent;
     border: none;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 750px) {
       display: block;
       margin-right: 28px;
     }
@@ -64,7 +64,7 @@ const SNavbar = styled.div`
     @media only screen and (max-width: 900px) {
       margin-left: 105px;
     }
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 425px) {
       margin-left: 25px;
     }
   }
