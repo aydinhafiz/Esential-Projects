@@ -73,6 +73,7 @@ const SFooter = styled.div`
     width: 120px;
   }
 
+  
   .footer__logo-img {
   }
 `;
