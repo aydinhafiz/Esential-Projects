@@ -69,6 +69,7 @@ export const SSubscribeHeader = styled.div`
       line-height: 25px;
     }
 
+
     @media only screen and (max-width: 425px) {
       text-align: center;
       font-size: 15px;
