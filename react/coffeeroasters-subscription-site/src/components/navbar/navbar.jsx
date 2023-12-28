@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import SNavbar from "./navbar.styles";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../scroll-to-top";
+import MobileMenu from "../mobile-menu/mobile-menu";
 
 function Navbar() {
+  const [isHamClicked, setIsHamClicked] = useState(false);
+
+  function handleHamClick() {
+    setIsHamClicked(isHamClicked ? false : true);
+    console.log("Hey");
+  }
+
   return (
     <SNavbar>
       <ScrollToTop />
+
       <Link to="/" className="logo-link">
         <img
           src="/assets/shared/desktop/logo.svg"
@@ -14,6 +23,11 @@ function Navbar() {
           className="logo-img"
         />
       </Link>
+
+      <button onClick={handleHamClick} className="ham-button">
+        <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
+      </button>
+
       <div className="options">
         <Link to="/" className="route-navbar">
           <span className="elements">HOME</span>
@@ -26,9 +40,7 @@ function Navbar() {
         </Link>
       </div>
 
-      <button className="ham-button">
-        <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
-      </button>
+      {/* <MobileMenu isHamClicked={isHamClicked} /> */}
     </SNavbar>
   );
 }

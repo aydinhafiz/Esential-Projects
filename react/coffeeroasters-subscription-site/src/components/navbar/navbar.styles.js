@@ -9,7 +9,6 @@ const SNavbar = styled.div`
 
   .options {
     display: flex;
-
     @media only screen and (max-width: 900px) {
       padding-right: 105px;
     }
@@ -17,6 +16,8 @@ const SNavbar = styled.div`
     @media only screen and (max-width: 750px) {
       display: none;
     }
+
+
   }
 
   .ham-button {
@@ -50,6 +51,19 @@ const SNavbar = styled.div`
     cursor: pointer;
 
     margin-right: 33px;
+
+    @media only screen and (max-width: 750px) {
+      color: #333d4b;
+      text-align: center;
+      font-family: "Fraunces";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: 32px;
+      margin-left: 100px;
+      margin-bottom: 32px;
+      width: 100%;
+    }
   }
 
   .elements:hover {
