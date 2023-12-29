@@ -43,6 +43,7 @@ function Navbar() {
       {/* <MobileMenu isHamClicked={isHamClicked} /> */}
     </SNavbar>
   );
+  
 }
 
 export default Navbar;
