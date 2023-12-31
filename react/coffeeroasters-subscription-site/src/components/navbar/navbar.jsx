@@ -28,7 +28,6 @@ function Navbar() {
         <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
       </button>
 
-
       <div className="options">
         <Link to="/" className="route-navbar">
           <span className="elements">HOME</span>
