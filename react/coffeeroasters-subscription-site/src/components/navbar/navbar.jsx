@@ -39,7 +39,6 @@ function Navbar() {
           <span className="elements no-margin">CREATE YOUR PLAN</span>
         </Link>
       </div>
-
       {/* <MobileMenu isHamClicked={isHamClicked} /> */}
     </SNavbar>
   );
