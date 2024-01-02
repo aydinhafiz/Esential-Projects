@@ -176,7 +176,7 @@ export const SStep = styled.div`
     }
 
     @media only screen and (max-width: 425px) {
-      width: 425px;
+      width: 375px;
       text-align: center;
 
       ${(props) => {
