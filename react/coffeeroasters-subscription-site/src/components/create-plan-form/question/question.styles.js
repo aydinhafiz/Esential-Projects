@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const SQuestion = styled.div`
   margin-bottom: 88px;
-
   .question-header {
     display: flex;
     justify-content: space-between;
@@ -21,6 +20,18 @@ const SQuestion = styled.div`
     line-height: 48px;
     margin-bottom: 56px;
     cursor: pointer;
+
+    @media only screen and (max-width: 900px) {
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 100px;
+    }
+
+    @media only screen and (max-width: 425px) {
+      text-align: start;
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   .question-title-arrow {

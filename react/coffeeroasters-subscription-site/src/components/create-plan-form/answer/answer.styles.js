@@ -7,12 +7,21 @@ const SAnswer = styled.button`
   background: #f4f1eb;
   border: none;
 
+  @media only screen and (max-width: 425px) {
+    padding: 24px 24px 24px 25px;
+    max-width: 350px;
+    margin-bottom: 16px;
+  }
+
   ${(props) =>
     props.$clicked ? "background:#0E8784; color: #FFF;" : "background:#f4f1eb;"}
 
   cursor: pointer;
   &:hover {
     background: #fdd6ba;
+    @media only screen and (max-width: 900px) {
+      background: #0e8784;
+    }
   }
   .answer-title {
     color: #333d4b;
@@ -22,6 +31,10 @@ const SAnswer = styled.button`
     font-weight: 900;
     line-height: 32px;
     margin-bottom: 28px;
+
+    @media only screen and (max-width: 425px) {
+      text-align: start;
+    }
   }
 
   .answer-description {
@@ -31,6 +44,10 @@ const SAnswer = styled.button`
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
+
+    @media only screen and (max-width: 425px) {
+      text-align: start;
+    }
   }
 `;
 

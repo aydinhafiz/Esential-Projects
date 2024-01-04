@@ -13,7 +13,16 @@ export const STypesOfCoffee = styled.div`
     flex-direction: column;
   }
 
-  
+  @media only screen and (max-width: 900px) {
+    justify-content: start;
+    margin-left: 130px;
+  }
+
+  @media only screen and (max-width: 425px) {
+    justify-content: center;
+    margin-left: 0px;
+  }
+
   .our-collection {
     position: absolute;
     color: #83888f;

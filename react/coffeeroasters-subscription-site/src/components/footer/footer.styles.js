@@ -51,6 +51,7 @@ const SFooter = styled.div`
       flex-direction: column;
       align-items: center;
       position: static;
+      margin-left: 0px;
     }
   }
 

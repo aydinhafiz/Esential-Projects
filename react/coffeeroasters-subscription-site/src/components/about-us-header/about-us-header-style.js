@@ -14,7 +14,7 @@ export const SAboutHeader = styled.div`
   @media only screen and (max-width: 900px) {
     margin: 0px auto 250px auto;
     margin-bottom: 144px;
-    width: 790px;
+    width: 789px;
     /* padding: 104px 233px 104px 58px; */
     background-position: 50% 50%;
   }
@@ -40,6 +40,7 @@ export const SAboutHeader = styled.div`
       align-items: center;
       width: 330px;
       text-align: center;
+      padding: 0px 0px 0px 0px;
     }
   }
 
@@ -68,6 +69,7 @@ export const SAboutHeader = styled.div`
     @media only screen and (max-width: 425px) {
       font-size: 15px;
       line-height: 25px;
+      text-align: center;
     }
   }
 `;

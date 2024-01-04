@@ -3,7 +3,11 @@ import styled from "styled-components";
 const SOrderSummary = styled.div`
   margin-top: 88px;
   justify-content: space-between;
-
+  @media only screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .order-summary-info {
     padding: 27px 64px 27px 64px;
     background: #2c343e;

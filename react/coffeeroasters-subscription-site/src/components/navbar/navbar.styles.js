@@ -10,14 +10,12 @@ const SNavbar = styled.div`
   .options {
     display: flex;
     @media only screen and (max-width: 900px) {
-      padding-right: 105px;
+      padding-right: 60px;
     }
 
     @media only screen and (max-width: 750px) {
       display: none;
     }
-
-
   }
 
   .ham-button {
@@ -76,7 +74,7 @@ const SNavbar = styled.div`
 
   .logo-img {
     @media only screen and (max-width: 900px) {
-      margin-left: 105px;
+      margin-left: 60px;
     }
     @media only screen and (max-width: 425px) {
       margin-left: 25px;

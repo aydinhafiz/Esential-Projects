@@ -15,7 +15,7 @@ export const SHomeHeader = styled.div`
     margin: 0px auto 250px auto;
     margin-bottom: 203px;
     background-image: url("./assets/home/tablet/image-hero-coffeepress.jpg");
-    width: 689px;
+    width: 789px;
     padding: 104px 233px 104px 58px;
     background-position: 50% 50%;
   }

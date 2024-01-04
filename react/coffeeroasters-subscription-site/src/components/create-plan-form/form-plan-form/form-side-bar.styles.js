@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const SFormSideBar = styled.div`
+  @media only screen and (max-width: 900px) {
+    display: none;
+  }
   max-width: 255px;
 
   .side-bar-steps {
