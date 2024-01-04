@@ -12,13 +12,13 @@ function Footer() {
             src="/assets/shared/desktop/logo-white.svg"
           ></img>
           <div className="footer__options-buttons">
-            <Link to="/">
+            <Link to="/" className="option-button-link">
               <span className="option-button">HOME</span>
             </Link>
-            <Link to="/about-Us">
+            <Link to="/about-Us" className="option-button-link">
               <span className="option-button">ABOUT US</span>
             </Link>
-            <Link to="/subscribe">
+            <Link to="/subscribe" className="option-button-link">
               <span className="option-button">CREATE YOUR PLAN</span>
             </Link>
           </div>

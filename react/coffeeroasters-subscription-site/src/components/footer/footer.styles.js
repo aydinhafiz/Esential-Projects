@@ -25,6 +25,9 @@ const SFooter = styled.div`
 
   .left-side {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     gap: 102px;
     @media only screen and (max-width: 900px) {
       flex-direction: column;
@@ -33,15 +36,26 @@ const SFooter = styled.div`
   }
 
   .footer__options-buttons {
+    position: absolute;
+    top: 0;
+    right: -402px;
     margin-bottom: 65px;
+
+    @media only screen and (max-width: 900px) {
+      position: static;
+      margin-left: 60px;
+    }
+
     @media only screen and (max-width: 425px) {
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: static;
     }
   }
 
   .option-button {
+    display: inline-block;
     color: #83888f;
     font-family: "Barlow";
     font-size: 12px;
@@ -74,6 +88,8 @@ const SFooter = styled.div`
   }
 
   .footer__logo-img {
+    @media only screen and (max-width: 900px) {
+    }
   }
 `;
 
