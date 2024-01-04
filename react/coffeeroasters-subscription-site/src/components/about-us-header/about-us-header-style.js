@@ -34,6 +34,7 @@ export const SAboutHeader = styled.div`
     justify-content: center;
     max-width: 445px;
     text-align: center;
+    padding: 137px 0px 137px 85px;
 
     @media only screen and (max-width: 425px) {
       align-items: center;
@@ -60,10 +61,10 @@ export const SAboutHeader = styled.div`
     color: #fefcf7;
     font-family: "Barlow";
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 26px;
     opacity: 0.8;
+    text-align: start;
     @media only screen and (max-width: 425px) {
       font-size: 15px;
       line-height: 25px;

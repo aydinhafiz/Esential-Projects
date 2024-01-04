@@ -21,7 +21,6 @@ export const SCoffeeQualityInfo = styled.div`
     align-items: center;
     padding: 88px 85px 88px 85px;
     height: 474px;
-    width: 788px;
     border-radius: 10px;
     background: #2c343e;
 
