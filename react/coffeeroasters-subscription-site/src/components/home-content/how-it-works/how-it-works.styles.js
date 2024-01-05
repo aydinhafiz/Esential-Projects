@@ -12,10 +12,13 @@ export const SHowWorks = styled.div`
   .how-it-works-title {
     color: #83888f;
     font-size: 24px;
-    font-style: normal;
     font-weight: 900;
     line-height: 32px;
     padding-left: 85px;
+
+    @media only screen and (max-width: 1084px) {
+      padding-left: 29px;
+    }
 
     @media only screen and (max-width: 900px) {
       width: 255px;

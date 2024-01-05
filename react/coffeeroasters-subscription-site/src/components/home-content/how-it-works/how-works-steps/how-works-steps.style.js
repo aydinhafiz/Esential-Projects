@@ -4,9 +4,28 @@ export const SSteps = styled.div`
   display: flex;
   padding: 80px 85px 64px 84px;
   border-radius: 10px;
-  @media only screen and (max-width: 900px) {
+
+  @media only screen and (max-width: 1136px) {
     padding: 55px 40px 46px 39px;
   }
+
+  @media only screen and (max-width: 1084px) {
+    padding: 55px 30px 46px 39px;
+  }
+
+  @media only screen and (max-width: 970px) {
+    padding: 55px 20px 46px 25px;
+  }
+
+  @media only screen and (max-width: 930px) {
+    padding: 55px 10px 46px 15px;
+  }
+
+  @media only screen and (max-width: 900px) {
+    padding: 55px 10px 46px 15px;
+    //padding: 55px 40px 46px 39px;
+  }
+
 
   @media only screen and (max-width: 425px) {
     flex-direction: column;

@@ -13,10 +13,6 @@ const SNavbar = styled.div`
       padding-right: 60px;
     }
 
-    @media only screen and (max-width: 870px) {
-      padding-right: 40px;
-    }
-
     @media only screen and (max-width: 830px) {
       padding-right: 20px;
     }
@@ -93,10 +89,6 @@ const SNavbar = styled.div`
       margin-left: 60px;
     }
     @media only screen and (max-width: 425px) {
-      margin-left: 25px;
-    }
-
-    @media only screen and (max-width: 870px) {
       margin-left: 25px;
     }
 

@@ -4,6 +4,7 @@ export const SStep = styled.div`
   max-width: 406px;
   padding-top: 80px;
 
+  
   @media only screen and (max-width: 900px) {
     padding-top: 48px;
   }
@@ -51,6 +52,21 @@ export const SStep = styled.div`
 
   &:not(:last-child) {
     padding-right: 95px;
+
+    @media only screen and (max-width: 1136px) {
+      padding-right: 55px;
+    }
+
+    @media only screen and (max-width: 1084px) {
+      padding-right: 35px;
+    }
+    @media only screen and (max-width: 970px) {
+      padding-right: 25px;
+    }
+    @media only screen and (max-width: 930px) {
+      padding-right: 15px;
+    }
+
     @media only screen and (max-width: 900px) {
       padding-right: 10px;
     }
@@ -95,7 +111,6 @@ export const SStep = styled.div`
     color: #333d4b;
     font-family: "Fraunces";
     font-size: 32px;
-    font-style: normal;
     font-weight: 900;
     line-height: 36px;
 
@@ -121,6 +136,12 @@ export const SStep = styled.div`
         }
       }}
     }
+
+    @media only screen and (max-width: 794px){
+      font-size: 22px;
+      line-height: 26px;
+    }
+
 
     @media only screen and (max-width: 425px) {
       text-align: center;

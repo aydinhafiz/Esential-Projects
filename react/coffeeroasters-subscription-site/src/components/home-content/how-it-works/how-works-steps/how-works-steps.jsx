@@ -29,4 +29,4 @@ function Steps({ type }) {
   );
 }
 
-export default Steps;
+export default Steps; 
