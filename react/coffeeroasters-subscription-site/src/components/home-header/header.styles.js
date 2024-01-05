@@ -20,6 +20,19 @@ export const SHomeHeader = styled.div`
     background-position: 50% 50%;
   }
 
+  @media only screen and (max-width: 785px) {
+    width: 785px;
+  }
+  @media only screen and (max-width: 760px) {
+    width: 760px;
+  }
+  @media only screen and (max-width: 740px) {
+    width: 740px;
+  }
+  @media only screen and (max-width: 720px) {
+    width: 720px;
+  }
+
   @media only screen and (max-width: 425px) {
     padding: 111px 24px 87px 24px;
     margin-bottom: 120px;

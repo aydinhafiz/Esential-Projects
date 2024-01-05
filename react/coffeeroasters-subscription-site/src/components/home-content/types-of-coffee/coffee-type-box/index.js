@@ -5,8 +5,8 @@ function CoffeeTypeBox({
   coffeeType,
   coffeImg,
   coffeeDescription,
-  handleCoffeeClick,
-  clickedCoffees,
+  // handleCoffeeClick,
+  // clickedCoffees,
 }) {
   return (
     <STypeOfCoffeeBox key={coffeeType}>
@@ -14,12 +14,8 @@ function CoffeeTypeBox({
 
       <div className="type-coffe-box-text">
         <h3
-          className={
-            clickedCoffees.includes(coffeeType)
-              ? "coffee-type__title-active"
-              : "coffee-type__title"
-          }
-          onClick={() => handleCoffeeClick(coffeeType)}
+          className="coffee-type__title"
+          // onClick={() => handleCoffeeClick(coffeeType)}
         >
           {coffeeType}
         </h3>

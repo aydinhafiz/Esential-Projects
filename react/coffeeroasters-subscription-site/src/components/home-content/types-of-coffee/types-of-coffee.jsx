@@ -30,31 +30,35 @@ const coffeeTypesData = [
 ];
 
 function TypesOfCoffee() {
-  const [clickedCoffees, setClickedCoffees] = useState([]);
+  // HERE
+  // const [clickedCoffees, setClickedCoffees] = useState([]);
 
-  useEffect(function () {
-    const clickedCoffees = JSON.parse(localStorage.getItem("clickedCoffees"));
-    if (clickedCoffees) {
-      setClickedCoffees(clickedCoffees);
-    }
-  }, []);
+  /// HERE
+  // useEffect(function () {
+  //   const clickedCoffees = JSON.parse(localStorage.getItem("clickedCoffees"));
+  //   if (clickedCoffees) {
+  //     setClickedCoffees(clickedCoffees);
+  //   }
+  // }, []);
 
-  function handleCoffeeClick(coffeeType) {
-    if (clickedCoffees.includes(coffeeType)) {
-      setClickedCoffees(clickedCoffees.filter((item) => item !== coffeeType));
-      localStorage.setItem(
-        "clickedCoffees",
-        JSON.stringify(clickedCoffees.filter((item) => item !== coffeeType))
-      );
-    } else {
-      setClickedCoffees([...clickedCoffees, coffeeType]);
-      localStorage.setItem(
-        "clickedCoffees",
-        JSON.stringify([...clickedCoffees, coffeeType])
-      );
-    }
-  }
-  console.log(clickedCoffees);
+
+/// HERE,-
+
+  // function handleCoffeeClick(coffeeType) {
+  //   if (clickedCoffees.includes(coffeeType)) {
+  //     setClickedCoffees(clickedCoffees.filter((item) => item !== coffeeType));
+  //     localStorage.setItem(
+  //       "clickedCoffees",
+  //       JSON.stringify(clickedCoffees.filter((item) => item !== coffeeType))
+  //     );
+  //   } else {
+  //     setClickedCoffees([...clickedCoffees, coffeeType]);
+  //     localStorage.setItem(
+  //       "clickedCoffees",
+  //       JSON.stringify([...clickedCoffees, coffeeType])
+  //     );
+  //   }
+  // }
 
   return (
     <STypesOfCoffee>
@@ -66,8 +70,8 @@ function TypesOfCoffee() {
       {coffeeTypesData.map(function (props) {
         return (
           <CoffeeTypeBox
-            handleCoffeeClick={handleCoffeeClick}
-            clickedCoffees={clickedCoffees}
+            // handleCoffeeClick={handleCoffeeClick}
+            // clickedCoffees={clickedCoffees}
             key={props.coffeeType}
             {...props}
           />

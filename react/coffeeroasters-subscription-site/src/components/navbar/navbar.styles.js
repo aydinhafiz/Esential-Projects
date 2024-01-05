@@ -13,6 +13,25 @@ const SNavbar = styled.div`
       padding-right: 60px;
     }
 
+    @media only screen and (max-width: 870px) {
+      padding-right: 40px;
+    }
+
+    @media only screen and (max-width: 830px) {
+      padding-right: 20px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      padding-right: 7px;
+    }
+    @media only screen and (max-width: 780px) {
+      padding-right: 0px;
+    }
+
+    @media only screen and (max-width: 760px) {
+      padding-right: -3px;
+    }
+
     @media only screen and (max-width: 750px) {
       display: none;
     }
@@ -78,6 +97,22 @@ const SNavbar = styled.div`
     }
     @media only screen and (max-width: 425px) {
       margin-left: 25px;
+    }
+
+    @media only screen and (max-width: 870px) {
+      margin-left: 25px;
+    }
+
+    @media only screen and (max-width: 830px) {
+      margin-left: 17px;
+    }
+
+    @media only screen and (max-width: 800px) {
+      margin-left: 10px;
+    }
+
+    @media only screen and (max-width: 780px) {
+      margin-left: 5px;
     }
   }
 `;

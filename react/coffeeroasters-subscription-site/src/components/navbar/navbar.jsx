@@ -5,11 +5,12 @@ import ScrollToTop from "../scroll-to-top";
 import MobileMenu from "../mobile-menu/mobile-menu";
 
 function Navbar() {
-  const [isHamClicked, setIsHamClicked] = useState(false);
+  const [isHamMenuOpen, setIsHamMenuOpen] = useState(false);
 
   function handleHamClick() {
-    setIsHamClicked(isHamClicked ? false : true);
-    console.log("Hey");
+    setIsHamMenuOpen((prevState) => {
+      return !prevState;
+    });
   }
 
   return (
@@ -39,7 +40,7 @@ function Navbar() {
           <span className="elements no-margin">CREATE YOUR PLAN</span>
         </Link>
       </div>
-      {/* <MobileMenu isHamClicked={isHamClicked} /> */}
+      {isHamMenuOpen && <MobileMenu />}
     </SNavbar>
   );
 }
