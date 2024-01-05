@@ -6,14 +6,14 @@ function MobileMenu() {
   return (
     <SMenu>
       <div className="menu-options">
-        <Link to="/" className="route-navbar">
-          <span className="elements">HOME</span>
+        <Link to="/" className="route-navbar-mobile-menu">
+          <span className="elements-mobile-menu">HOME</span>
         </Link>
-        <Link to="/about-Us" className="route-navbar">
-          <span className="elements">ABOUT US</span>
+        <Link to="/about-Us" className="route-navbar-mobile-menu">
+          <span className="elements-mobile-menu">ABOUT US</span>
         </Link>
-        <Link to="/subscribe" className="route-navbar">
-          <span className="elements no-margin">CREATE YOUR PLAN</span>
+        <Link to="/subscribe" className="route-navbar-mobile-menu">
+          <span className="elements-mobile-menu no-margin">CREATE YOUR PLAN</span>
         </Link>
       </div>
     </SMenu>

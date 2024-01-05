@@ -74,11 +74,8 @@ const SNavbar = styled.div`
       text-align: center;
       font-family: "Fraunces";
       font-size: 24px;
-      font-style: normal;
       font-weight: 900;
       line-height: 32px;
-      margin-left: 100px;
-      margin-bottom: 32px;
       width: 100%;
     }
   }

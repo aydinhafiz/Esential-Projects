@@ -26,9 +26,17 @@ function Navbar() {
       </Link>
 
       <button onClick={handleHamClick} className="ham-button">
-        <img src="./assets/shared/mobile/icon-hamburger.svg" alt="" />
+        <img
+          src={
+            isHamMenuOpen
+              ? "./assets/shared/mobile/icon-close.svg"
+              : "./assets/shared/mobile/icon-hamburger.svg"
+          }
+          alt=""
+        />
       </button>
 
+      {isHamMenuOpen && <MobileMenu />}
       <div className="options">
         <Link to="/" className="route-navbar">
           <span className="elements">HOME</span>
@@ -40,7 +48,6 @@ function Navbar() {
           <span className="elements no-margin">CREATE YOUR PLAN</span>
         </Link>
       </div>
-      {isHamMenuOpen && <MobileMenu />}
     </SNavbar>
   );
 }
