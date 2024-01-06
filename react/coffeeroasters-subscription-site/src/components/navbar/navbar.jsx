@@ -41,7 +41,7 @@ function Navbar() {
         <Link to="/" className="route-navbar">
           <span className="elements">HOME</span>
         </Link>
-        <Link to="/about-Us" className="route-navbar">
+        <Link to="/about-us" className="route-navbar">
           <span className="elements">ABOUT US</span>
         </Link>
         <Link to="/subscribe" className="route-navbar">
