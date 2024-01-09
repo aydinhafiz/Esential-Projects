@@ -50,7 +50,6 @@ function Navbar() {
       </div>
     </SNavbar>
   );
-  
 }
 
 export default Navbar;
