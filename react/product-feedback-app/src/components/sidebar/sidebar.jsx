@@ -10,7 +10,6 @@ function SideBar() {
         </div>
       </div>
       
-
       <div className="category-board">
         <div className="categories">
           <div className="category">
