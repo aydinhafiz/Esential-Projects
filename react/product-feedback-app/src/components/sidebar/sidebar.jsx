@@ -9,6 +9,7 @@ function SideBar() {
           <p className="mentor-board">Feedback Board</p>
         </div>
       </div>
+      
 
       <div className="category-board">
         <div className="categories">
