@@ -9,7 +9,6 @@ import tvImage from "../../assets/icon-nav-tv-series.svg";
 import favouriteImg from "../../assets/icon-nav-bookmark.svg";
 import profileImg from "../../assets/image-avatar.png";
 
-
 function SideBar() {
   return (
     <SSideBar>
